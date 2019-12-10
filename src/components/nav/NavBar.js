@@ -8,11 +8,15 @@ class NavBar extends Component {
             <nav>
                 <ul className="container">
                     <li><Link className="nav-link" to="/">Home</Link></li>
-                    <li><Link className="nav-link" to="/cues">Cues</Link></li>
-                    <li><Link className="nav-link" to="/cues">My Cues</Link></li>
-                    <li><Link className="nav-link" to="/login" onClick={this.props.clearUser} >Log Out</Link></li>
-                    <li><Link className="nav-link" to="/login">Login</Link></li>
-
+                    {(this.props.user) ?
+                        <>
+                            <li><Link className="nav-link" to="/cues">Cues</Link></li>
+                            <li><Link className="nav-link" to="/cues">My Cues</Link></li>
+                            <li><Link className="nav-link" to="/login" onClick={this.props.clearUser} >Log Out</Link></li>
+                        </>
+                        :
+                        <li><Link className="nav-link" to="/login">Login</Link></li>
+                    }
                 </ul>
             </nav>
         )

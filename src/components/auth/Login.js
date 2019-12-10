@@ -24,7 +24,7 @@ class Login extends Component {
                 if (existingUser.length > 0) {
                     { window.alert("Welcome back!") }
                     { this.props.setUser(existingUser[0]) }
-                    { this.props.history.push("/cues") }
+                    { this.props.history.push("/") }
                 } else {
                     { window.alert("Welcome!") }
                     this.setState({ loadingStatus: true })
@@ -35,7 +35,7 @@ class Login extends Component {
                     APIManager.post("users", user)
                         .then(newUser => {
                             this.props.setUser(newUser)
-                            this.props.history.push("/cues")
+                            this.props.history.push("/")
                         })
                 }
             })
@@ -49,7 +49,7 @@ class Login extends Component {
         */
         this.searchUsers()
         this.props.setUser({ name: this.state.name, password: this.state.password })
-        this.props.history.push("/cues");
+        this.props.history.push("/home");
 
     }
 
