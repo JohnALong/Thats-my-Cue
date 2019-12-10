@@ -3,25 +3,20 @@ import { Link } from "react-router-dom"
 
 class NavBar extends Component {
 
-  render(){
+    render() {
+        return (
+            <nav>
+                <ul className="container">
+                    <li><Link className="nav-link" to="/">Home</Link></li>
+                    <li><Link className="nav-link" to="/cues">Cues</Link></li>
+                    <li><Link className="nav-link" to="/cues">My Cues</Link></li>
+                    <li><Link className="nav-link" to="/login" onClick={this.props.clearUser} >Log Out</Link></li>
+                    <li><Link className="nav-link" to="/login">Login</Link></li>
 
-    return (
-      <header>
-        <h1 className="site-title">Now it's for real<br />
-          <small>Doing it now so this time is easier</small>
-        </h1>
-        <nav>
-          <ul className="container">
-            <li><Link className="nav-link" to="/">Home</Link></li>
-            <li><Link className="nav-link" to="/cues">Cues</Link></li>
-            <li>Locations</li>
-            <li>Employees</li>
-            <li>Owners</li>
-          </ul>
-        </nav>
-      </header>
-    )
-  }
+                </ul>
+            </nav>
+        )
+    }
 }
 
 export default NavBar;
