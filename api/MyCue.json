@@ -1,468 +1,473 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "Alanah",
-            "password": "dplcneMO7"
-        },
-        {
-            "id": 2,
-            "name": "Auberon",
-            "password": "0vndr1sL4"
-        },
-        {
-            "id": 3,
-            "name": "Oralie",
-            "password": "aJwinNVp"
-        },
-        {
-            "id": 4,
-            "name": "Camila",
-            "password": "aPHTIWi"
-        },
-        {
-            "id": 5,
-            "name": "Franz",
-            "password": "NIvX8jC7nlsS"
-        },
-        {
-            "id": 6,
-            "name": "Leodora",
-            "password": "rUNDuRJqB"
-        },
-        {
-            "id": 7,
-            "name": "Tabor",
-            "password": "7KlXgvO8"
-        },
-        {
-            "id": 8,
-            "name": "Boyd",
-            "password": "oGvvseh"
-        },
-        {
-            "id": 9,
-            "name": "Hollis",
-            "password": "gtBQ7DVsZK8"
-        },
-        {
-            "id": 10,
-            "name": "Cristen",
-            "password": "kqFaiDUS898E"
-        }
-    ],
-    "builders": [
-        {
-            "id": 1,
-            "name": "Darrin Tuff",
-            "contactInfo": "297-970-9794"
-        },
-        {
-            "id": 2,
-            "name": "Yoshi Cookson",
-            "contactInfo": "779-226-9868"
-        },
-        {
-            "id": 3,
-            "name": "Herb Kitcherside",
-            "contactInfo": "581-761-5743"
-        },
-        {
-            "id": 4,
-            "name": "Kelci Chaplyn",
-            "contactInfo": "188-747-5181"
-        },
-        {
-            "id": 5,
-            "name": "Tally Rylatt",
-            "contactInfo": "117-232-4234"
-        },
-        {
-            "id": 6,
-            "name": "Deeanne Mursell",
-            "contactInfo": "139-442-1050"
-        },
-        {
-            "id": 7,
-            "name": "Franchot Woolway",
-            "contactInfo": "975-295-1140"
-        },
-        {
-            "id": 8,
-            "name": "Kaylyn Ahlf",
-            "contactInfo": "851-368-4934"
-        },
-        {
-            "id": 9,
-            "name": "Frazer Grigson",
-            "contactInfo": "697-945-8874"
-        },
-        {
-            "id": 10,
-            "name": "Angelico Stonnell",
-            "contactInfo": "644-217-1992"
-        }
-    ],
-    "wraps": [
-        {
-            "id": 1,
-            "name": "massa donec dapibus",
-            "aboutWrap": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique."
-        },
-        {
-            "id": 2,
-            "name": "amet nunc viverra",
-            "aboutWrap": "Proin at turpis a pede posuere nonummy."
-        },
-        {
-            "id": 3,
-            "name": "maecenas",
-            "aboutWrap": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque."
-        },
-        {
-            "id": 4,
-            "name": "cum sociis natoque",
-            "aboutWrap": "Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia."
-        },
-        {
-            "id": 5,
-            "name": "quis",
-            "aboutWrap": "Nam dui."
-        },
-        {
-            "id": 6,
-            "name": "est lacinia",
-            "aboutWrap": "Mauris ullamcorper purus sit amet nulla."
-        },
-        {
-            "id": 7,
-            "name": "nibh in lectus",
-            "aboutWrap": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus."
-        },
-        {
-            "id": 8,
-            "name": "vestibulum rutrum",
-            "aboutWrap": "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla."
-        },
-        {
-            "id": 9,
-            "name": "eu",
-            "aboutWrap": "Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus."
-        },
-        {
-            "id": 10,
-            "name": "nulla dapibus dolor",
-            "aboutWrap": "Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci."
-        }
-    ],
-    "styles": [
-        {
-            "id": 1,
-            "name": "Wylie Arpin",
-            "aboutStyle": "Phasellus id sapien in sapien iaculis congue."
-        },
-        {
-            "id": 2,
-            "name": "Theo Coronas",
-            "aboutStyle": "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst."
-        },
-        {
-            "id": 3,
-            "name": "Nevin Lesslie",
-            "aboutStyle": "Proin risus. Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante."
-        },
-        {
-            "id": 4,
-            "name": "Cort Santacrole",
-            "aboutStyle": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque."
-        },
-        {
-            "id": 5,
-            "name": "Lynelle Harp",
-            "aboutStyle": "Donec ut dolor."
-        },
-        {
-            "id": 6,
-            "name": "Evangelina Pengilly",
-            "aboutStyle": "Nulla tempus."
-        },
-        {
-            "id": 7,
-            "name": "Janelle Monelle",
-            "aboutStyle": "Aliquam non mauris."
-        },
-        {
-            "id": 8,
-            "name": "Margaret Drowsfield",
-            "aboutStyle": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis."
-        },
-        {
-            "id": 9,
-            "name": "Haydon Haggarth",
-            "aboutStyle": "Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio."
-        },
-        {
-            "id": 10,
-            "name": "Drusi Bayford",
-            "aboutStyle": "Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus."
-        }
-    ],
-    "styleTypes": [
-        {
-            "id": 1,
-            "styleId": 1
-        },
-        {
-            "id": 2,
-            "styleId": 2
-        },
-        {
-            "id": 3,
-            "styleId": 3
-        },
-        {
-            "id": 4,
-            "styleId": 4
-        },
-        {
-            "id": 5,
-            "styleId": 5
-        },
-        {
-            "id": 6,
-            "styleId": 6
-        },
-        {
-            "id": 7,
-            "styleId": 7
-        },
-        {
-            "id": 8,
-            "styleId": 8
-        },
-        {
-            "id": 9,
-            "styleId": 9
-        },
-        {
-            "id": 10,
-            "styleId": 10
-        }
-    ],
-    "wrapTypes": [
-        {
-            "id": 1,
-            "wrapId": 1
-        },
-        {
-            "id": 2,
-            "wrapId": 2
-        },
-        {
-            "id": 3,
-            "wrapId": 3
-        },
-        {
-            "id": 4,
-            "wrapId": 4
-        },
-        {
-            "id": 5,
-            "wrapId": 5
-        },
-        {
-            "id": 6,
-            "wrapId": 6
-        },
-        {
-            "id": 7,
-            "wrapId": 7
-        },
-        {
-            "id": 8,
-            "wrapId": 8
-        },
-        {
-            "id": 9,
-            "wrapId": 9
-        },
-        {
-            "id": 10,
-            "wrapId": 10
-        }
-    ],
-    "cues": [
-        {
-            "id": 1,
-            "builderId": 1,
-            "styleId": 1,
-            "wrapId": 1,
-            "aboutCue": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis.",
-            "image": "Bludworth_Inlays.jpg"
-        },
-        {
-            "id": 2,
-            "builderId": 2,
-            "styleId": 2,
-            "wrapId": 2,
-            "data": "Nulla tellus. In sagittis dui vel nisl.",
-            "image": "Capone_4_Point.jpg"
-        },
-        {
-            "id": 3,
-            "builderId": 3,
-            "styleId": 3,
-            "wrapId": 3,
-            "data": "Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
-            "image": "Dave_Barenbrugge_Merry_Widow.jpg"
-        },
-        {
-            "id": 4,
-            "builderId": 4,
-            "styleId": 4,
-            "wrapId": 4,
-            "data": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
-            "image": "Eddie_Cohen_6_Point.jpg"
-        },
-        {
-            "id": 5,
-            "builderId": 5,
-            "styleId": 5,
-            "wrapId": 5,
-            "data": "Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
-            "image": "Hart_Merry_Widow.jpg"
-        },
-        {
-            "id": 6,
-            "builderId": 6,
-            "styleId": 6,
-            "wrapId": 6,
-            "data": "Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor.",
-            "image": "Ivantsov_Butterfly.jpg"
-        },
-        {
-            "id": 7,
-            "builderId": 7,
-            "styleId": 7,
-            "wrapId": 7,
-            "data": "Nunc nisl.",
-            "image": "Paul_Drexler_Inlay.jpg"
-        },
-        {
-            "id": 8,
-            "builderId": 8,
-            "styleId": 8,
-            "wrapId": 8,
-            "data": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros.",
-            "image": "Shelby_Williams_6_Point.jpg"
-        },
-        {
-            "id": 9,
-            "builderId": 9,
-            "styleId": 9,
-            "wrapId": 9,
-            "data": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum.",
-            "image": "Southwest_Inlays_Linen.jpg"
-        },
-        {
-            "id": 10,
-            "builderId": 10,
-            "styleId": 10,
-            "wrapId": 10,
-            "data": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia.",
-            "image": "Steve_Lomax_4_Point.jpg"
-        }
-    ],
-    "user_cue": [
-        {
-            "id": 1,
-            "cueId": 1,
-            "userId": 1,
-            "notes": "Etiam justo. Etiam pretium iaculis justo.",
-            "quotedPrice": "Euro",
-            "builderContacted": false,
-            "timeToBuild": "36 months"
-        },
-        {
-            "id": 2,
-            "cueId": 2,
-            "userId": 2,
-            "notes": "Praesent blandit lacinia erat.",
-            "quotedPrice": "Shekel",
-            "builderContacted": false,
-            "timeToBuild": "36 months"
-        },
-        {
-            "id": 3,
-            "cueId": 3,
-            "userId": 3,
-            "notes": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante.",
-            "quotedPrice": "Yuan Renminbi",
-            "builderContacted": false,
-            "timeToBuild": "24 months"
-        },
-        {
-            "id": 4,
-            "cueId": 4,
-            "userId": 4,
-            "notes": "Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst.",
-            "quotedPrice": "Dollar",
-            "builderContacted": false,
-            "timeToBuild": "24 months"
-        },
-        {
-            "id": 5,
-            "cueId": 5,
-            "userId": 5,
-            "notes": "Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat.",
-            "quotedPrice": "Yuan Renminbi",
-            "builderContacted": false,
-            "timeToBuild": "6 months"
-        },
-        {
-            "id": 6,
-            "cueId": 6,
-            "userId": 6,
-            "notes": "Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet.",
-            "quotedPrice": "Yuan Renminbi",
-            "builderContacted": false,
-            "timeToBuild": "36 months"
-        },
-        {
-            "id": 7,
-            "cueId": 7,
-            "userId": 7,
-            "notes": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
-            "quotedPrice": "Rupiah",
-            "builderContacted": false,
-            "timeToBuild": "36 months"
-        },
-        {
-            "id": 8,
-            "cueId": 8,
-            "userId": 8,
-            "notes": "Proin interdum mauris non ligula pellentesque ultrices.",
-            "quotedPrice": "Yuan Renminbi",
-            "builderContacted": false,
-            "timeToBuild": "12 months"
-        },
-        {
-            "id": 9,
-            "cueId": 9,
-            "userId": 9,
-            "notes": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
-            "quotedPrice": "Euro",
-            "builderContacted": false,
-            "timeToBuild": "12 months"
-        },
-        {
-            "id": 10,
-            "cueId": 10,
-            "userId": 10,
-            "notes": "Cras pellentesque volutpat dui.",
-            "quotedPrice": "Dollar",
-            "builderContacted": false,
-            "timeToBuild": "12 months"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "name": "Alanah",
+      "password": "dplcneMO7"
+    },
+    {
+      "id": 2,
+      "name": "Auberon",
+      "password": "0vndr1sL4"
+    },
+    {
+      "id": 3,
+      "name": "Oralie",
+      "password": "aJwinNVp"
+    },
+    {
+      "id": 4,
+      "name": "Camila",
+      "password": "aPHTIWi"
+    },
+    {
+      "id": 5,
+      "name": "Franz",
+      "password": "NIvX8jC7nlsS"
+    },
+    {
+      "id": 6,
+      "name": "Leodora",
+      "password": "rUNDuRJqB"
+    },
+    {
+      "id": 7,
+      "name": "Tabor",
+      "password": "7KlXgvO8"
+    },
+    {
+      "id": 8,
+      "name": "Boyd",
+      "password": "oGvvseh"
+    },
+    {
+      "id": 9,
+      "name": "Hollis",
+      "password": "gtBQ7DVsZK8"
+    },
+    {
+      "id": 10,
+      "name": "Cristen",
+      "password": "kqFaiDUS898E"
+    },
+    {
+      "name": "John Long",
+      "password": "123",
+      "id": 11
+    }
+  ],
+  "builders": [
+    {
+      "id": 1,
+      "name": "Darrin Tuff",
+      "contactInfo": "297-970-9794"
+    },
+    {
+      "id": 2,
+      "name": "Yoshi Cookson",
+      "contactInfo": "779-226-9868"
+    },
+    {
+      "id": 3,
+      "name": "Herb Kitcherside",
+      "contactInfo": "581-761-5743"
+    },
+    {
+      "id": 4,
+      "name": "Kelci Chaplyn",
+      "contactInfo": "188-747-5181"
+    },
+    {
+      "id": 5,
+      "name": "Tally Rylatt",
+      "contactInfo": "117-232-4234"
+    },
+    {
+      "id": 6,
+      "name": "Deeanne Mursell",
+      "contactInfo": "139-442-1050"
+    },
+    {
+      "id": 7,
+      "name": "Franchot Woolway",
+      "contactInfo": "975-295-1140"
+    },
+    {
+      "id": 8,
+      "name": "Kaylyn Ahlf",
+      "contactInfo": "851-368-4934"
+    },
+    {
+      "id": 9,
+      "name": "Frazer Grigson",
+      "contactInfo": "697-945-8874"
+    },
+    {
+      "id": 10,
+      "name": "Angelico Stonnell",
+      "contactInfo": "644-217-1992"
+    }
+  ],
+  "wraps": [
+    {
+      "id": 1,
+      "name": "massa donec dapibus",
+      "aboutWrap": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique."
+    },
+    {
+      "id": 2,
+      "name": "amet nunc viverra",
+      "aboutWrap": "Proin at turpis a pede posuere nonummy."
+    },
+    {
+      "id": 3,
+      "name": "maecenas",
+      "aboutWrap": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque."
+    },
+    {
+      "id": 4,
+      "name": "cum sociis natoque",
+      "aboutWrap": "Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia."
+    },
+    {
+      "id": 5,
+      "name": "quis",
+      "aboutWrap": "Nam dui."
+    },
+    {
+      "id": 6,
+      "name": "est lacinia",
+      "aboutWrap": "Mauris ullamcorper purus sit amet nulla."
+    },
+    {
+      "id": 7,
+      "name": "nibh in lectus",
+      "aboutWrap": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus."
+    },
+    {
+      "id": 8,
+      "name": "vestibulum rutrum",
+      "aboutWrap": "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla."
+    },
+    {
+      "id": 9,
+      "name": "eu",
+      "aboutWrap": "Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus."
+    },
+    {
+      "id": 10,
+      "name": "nulla dapibus dolor",
+      "aboutWrap": "Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci."
+    }
+  ],
+  "styles": [
+    {
+      "id": 1,
+      "name": "Wylie Arpin",
+      "aboutStyle": "Phasellus id sapien in sapien iaculis congue."
+    },
+    {
+      "id": 2,
+      "name": "Theo Coronas",
+      "aboutStyle": "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst."
+    },
+    {
+      "id": 3,
+      "name": "Nevin Lesslie",
+      "aboutStyle": "Proin risus. Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante."
+    },
+    {
+      "id": 4,
+      "name": "Cort Santacrole",
+      "aboutStyle": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque."
+    },
+    {
+      "id": 5,
+      "name": "Lynelle Harp",
+      "aboutStyle": "Donec ut dolor."
+    },
+    {
+      "id": 6,
+      "name": "Evangelina Pengilly",
+      "aboutStyle": "Nulla tempus."
+    },
+    {
+      "id": 7,
+      "name": "Janelle Monelle",
+      "aboutStyle": "Aliquam non mauris."
+    },
+    {
+      "id": 8,
+      "name": "Margaret Drowsfield",
+      "aboutStyle": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis."
+    },
+    {
+      "id": 9,
+      "name": "Haydon Haggarth",
+      "aboutStyle": "Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio."
+    },
+    {
+      "id": 10,
+      "name": "Drusi Bayford",
+      "aboutStyle": "Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus."
+    }
+  ],
+  "styleTypes": [
+    {
+      "id": 1,
+      "styleId": 1
+    },
+    {
+      "id": 2,
+      "styleId": 2
+    },
+    {
+      "id": 3,
+      "styleId": 3
+    },
+    {
+      "id": 4,
+      "styleId": 4
+    },
+    {
+      "id": 5,
+      "styleId": 5
+    },
+    {
+      "id": 6,
+      "styleId": 6
+    },
+    {
+      "id": 7,
+      "styleId": 7
+    },
+    {
+      "id": 8,
+      "styleId": 8
+    },
+    {
+      "id": 9,
+      "styleId": 9
+    },
+    {
+      "id": 10,
+      "styleId": 10
+    }
+  ],
+  "wrapTypes": [
+    {
+      "id": 1,
+      "wrapId": 1
+    },
+    {
+      "id": 2,
+      "wrapId": 2
+    },
+    {
+      "id": 3,
+      "wrapId": 3
+    },
+    {
+      "id": 4,
+      "wrapId": 4
+    },
+    {
+      "id": 5,
+      "wrapId": 5
+    },
+    {
+      "id": 6,
+      "wrapId": 6
+    },
+    {
+      "id": 7,
+      "wrapId": 7
+    },
+    {
+      "id": 8,
+      "wrapId": 8
+    },
+    {
+      "id": 9,
+      "wrapId": 9
+    },
+    {
+      "id": 10,
+      "wrapId": 10
+    }
+  ],
+  "cues": [
+    {
+      "id": 1,
+      "builderId": 1,
+      "styleId": 1,
+      "wrapId": 1,
+      "aboutCue": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis.",
+      "image": "Bludworth_Inlays.jpg"
+    },
+    {
+      "id": 2,
+      "builderId": 2,
+      "styleId": 2,
+      "wrapId": 2,
+      "data": "Nulla tellus. In sagittis dui vel nisl.",
+      "image": "Capone_4_Point.jpg"
+    },
+    {
+      "id": 3,
+      "builderId": 3,
+      "styleId": 3,
+      "wrapId": 3,
+      "data": "Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
+      "image": "Dave_Barenbrugge_Merry_Widow.jpg"
+    },
+    {
+      "id": 4,
+      "builderId": 4,
+      "styleId": 4,
+      "wrapId": 4,
+      "data": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
+      "image": "Eddie_Cohen_6_Point.jpg"
+    },
+    {
+      "id": 5,
+      "builderId": 5,
+      "styleId": 5,
+      "wrapId": 5,
+      "data": "Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
+      "image": "Hart_Merry_Widow.jpg"
+    },
+    {
+      "id": 6,
+      "builderId": 6,
+      "styleId": 6,
+      "wrapId": 6,
+      "data": "Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor.",
+      "image": "Ivantsov_Butterfly.jpg"
+    },
+    {
+      "id": 7,
+      "builderId": 7,
+      "styleId": 7,
+      "wrapId": 7,
+      "data": "Nunc nisl.",
+      "image": "Paul_Drexler_Inlay.jpg"
+    },
+    {
+      "id": 8,
+      "builderId": 8,
+      "styleId": 8,
+      "wrapId": 8,
+      "data": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros.",
+      "image": "Shelby_Williams_6_Point.jpg"
+    },
+    {
+      "id": 9,
+      "builderId": 9,
+      "styleId": 9,
+      "wrapId": 9,
+      "data": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum.",
+      "image": "Southwest_Inlays_Linen.jpg"
+    },
+    {
+      "id": 10,
+      "builderId": 10,
+      "styleId": 10,
+      "wrapId": 10,
+      "data": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia.",
+      "image": "Steve_Lomax_4_Point.jpg"
+    }
+  ],
+  "user_cue": [
+    {
+      "id": 1,
+      "cueId": 1,
+      "userId": 1,
+      "notes": "Etiam justo. Etiam pretium iaculis justo.",
+      "quotedPrice": "Euro",
+      "builderContacted": false,
+      "timeToBuild": "36 months"
+    },
+    {
+      "id": 2,
+      "cueId": 2,
+      "userId": 2,
+      "notes": "Praesent blandit lacinia erat.",
+      "quotedPrice": "Shekel",
+      "builderContacted": false,
+      "timeToBuild": "36 months"
+    },
+    {
+      "id": 3,
+      "cueId": 3,
+      "userId": 3,
+      "notes": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante.",
+      "quotedPrice": "Yuan Renminbi",
+      "builderContacted": false,
+      "timeToBuild": "24 months"
+    },
+    {
+      "id": 4,
+      "cueId": 4,
+      "userId": 4,
+      "notes": "Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst.",
+      "quotedPrice": "Dollar",
+      "builderContacted": false,
+      "timeToBuild": "24 months"
+    },
+    {
+      "id": 5,
+      "cueId": 5,
+      "userId": 5,
+      "notes": "Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat.",
+      "quotedPrice": "Yuan Renminbi",
+      "builderContacted": false,
+      "timeToBuild": "6 months"
+    },
+    {
+      "id": 6,
+      "cueId": 6,
+      "userId": 6,
+      "notes": "Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet.",
+      "quotedPrice": "Yuan Renminbi",
+      "builderContacted": false,
+      "timeToBuild": "36 months"
+    },
+    {
+      "id": 7,
+      "cueId": 7,
+      "userId": 7,
+      "notes": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
+      "quotedPrice": "Rupiah",
+      "builderContacted": false,
+      "timeToBuild": "36 months"
+    },
+    {
+      "id": 8,
+      "cueId": 8,
+      "userId": 8,
+      "notes": "Proin interdum mauris non ligula pellentesque ultrices.",
+      "quotedPrice": "Yuan Renminbi",
+      "builderContacted": false,
+      "timeToBuild": "12 months"
+    },
+    {
+      "id": 9,
+      "cueId": 9,
+      "userId": 9,
+      "notes": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
+      "quotedPrice": "Euro",
+      "builderContacted": false,
+      "timeToBuild": "12 months"
+    },
+    {
+      "id": 10,
+      "cueId": 10,
+      "userId": 10,
+      "notes": "Cras pellentesque volutpat dui.",
+      "quotedPrice": "Dollar",
+      "builderContacted": false,
+      "timeToBuild": "12 months"
+    }
+  ]
 }
