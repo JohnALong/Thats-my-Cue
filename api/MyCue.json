@@ -2,58 +2,53 @@
   "users": [
     {
       "id": 1,
-      "name": "Alanah",
+      "name": "ANY ONE",
       "password": "dplcneMO7"
     },
     {
       "id": 2,
-      "name": "Auberon",
+      "name": "AMOS ANDY",
       "password": "0vndr1sL4"
     },
     {
       "id": 3,
-      "name": "Oralie",
+      "name": "OVAL TINE",
       "password": "aJwinNVp"
     },
     {
       "id": 4,
-      "name": "Camila",
+      "name": "CAMILE SOAP",
       "password": "aPHTIWi"
     },
     {
       "id": 5,
-      "name": "Franz",
+      "name": "FRANZ GRUBER",
       "password": "NIvX8jC7nlsS"
     },
     {
       "id": 6,
-      "name": "Leodora",
+      "name": "LINUS SMITH",
       "password": "rUNDuRJqB"
     },
     {
       "id": 7,
-      "name": "Tabor",
+      "name": "TOLD YA",
       "password": "7KlXgvO8"
     },
     {
       "id": 8,
-      "name": "Boyd",
+      "name": "BOYD BINGHAM",
       "password": "oGvvseh"
     },
     {
       "id": 9,
-      "name": "Hollis",
+      "name": "HOLLIS SWAM",
       "password": "gtBQ7DVsZK8"
     },
     {
       "id": 10,
-      "name": "Cristen",
-      "password": "kqFaiDUS898E"
-    },
-    {
       "name": "John Long",
-      "password": "123",
-      "id": 11
+      "password": "kqFaiDUS898E"
     }
   ],
   "builders": [

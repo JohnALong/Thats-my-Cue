@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import APIManager from "../../modules/APIManager"
+import {allUpperCase} from '../../modules/helpers'
 
 class Login extends Component {
 
@@ -28,8 +29,8 @@ class Login extends Component {
                     { window.alert("Welcome!") }
                     this.setState({ loadingStatus: true })
                     const user = {
-                        name: this.state.name,
-                    password: this.state.password
+                        name: allUpperCase(this.state.name),
+                        password: this.state.password
                     }
                     APIManager.post("users", user)
                         .then(newUser => {
