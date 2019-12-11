@@ -4,8 +4,8 @@ export default {
     get(id) {
         return fetch(`${remoteURL}/cues/${id}/?_expand=builder&_expand=wrap&_expand=style`).then(result => result.json())
     },
-    getAll() {
-        return fetch(`${remoteURL}/cues/?_expand=builder&_expand=wrap&_expand=style`).then(result => result.json())
+    getAll(items) {
+        return fetch(`${remoteURL}/${items}`).then(result => result.json())
     },
     post(items, newItem) {
         return fetch(`${remoteURL}/${items}`, {
@@ -21,4 +21,9 @@ export default {
         return fetch(`${remoteURL}/users?&q=${searchAll}`)
             .then(users => users.json())
     },
+    // fetch to return user cues
+    getWithItems(items, id, secondaryItems) {
+        return fetch(`${remoteURL}/${items}/${id}/${secondaryItems}?_expand=cue`)
+          .then(result => result.json())
+      }
 }

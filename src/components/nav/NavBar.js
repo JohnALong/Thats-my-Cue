@@ -11,7 +11,7 @@ class NavBar extends Component {
                     {(this.props.user) ?
                         <>
                             <li><Link className="nav-link" to="/cues">Cues</Link></li>
-                            <li><Link className="nav-link" to="/cues">My Cues</Link></li>
+                            <li><Link className="nav-link" to="/user_cues">My Cues</Link></li>
                             <li><Link className="nav-link" to="/login" onClick={this.props.clearUser} >Log Out</Link></li>
                         </>
                         :

@@ -373,7 +373,7 @@
       "image": "Steve_Lomax_4_Point.jpg"
     }
   ],
-  "user_cue": [
+  "user_cues": [
     {
       "id": 1,
       "cueId": 1,
@@ -395,7 +395,7 @@
     {
       "id": 3,
       "cueId": 3,
-      "userId": 3,
+      "userId": 10,
       "notes": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante.",
       "quotedPrice": "Yuan Renminbi",
       "builderContacted": false,
@@ -404,7 +404,7 @@
     {
       "id": 4,
       "cueId": 4,
-      "userId": 4,
+      "userId": 10,
       "notes": "Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst.",
       "quotedPrice": "Dollar",
       "builderContacted": false,
@@ -431,7 +431,7 @@
     {
       "id": 7,
       "cueId": 7,
-      "userId": 7,
+      "userId": 10,
       "notes": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
       "quotedPrice": "Rupiah",
       "builderContacted": false,
