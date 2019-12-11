@@ -7,17 +7,17 @@ class User_CueList extends Component {
     //define what this component needs to render
     state = {
         user_Cues: [],
-        cues: []
     }
-    
+
     getAllCues = () => {
         APIManager.getAll(`cues/?_expand=builder&_expand=wrap&_expand=style`)
-        .then((cues) => {
-            this.setState({
-                cues: cues
+            .then((cues) => {
+                this.setState({
+                    cues: cues
+                })
+                // console.log("cues in get all cues", cues)
             })
-        })
-}
+    }
 
     getAllUserCues = () => {
         const currentUser = JSON.parse(localStorage.getItem("credentials"))
@@ -25,22 +25,21 @@ class User_CueList extends Component {
             .then((user_Cues) => {
                 this.setState({
                     user_Cues: user_Cues
-                })      
+                })
             })
-
     }
 
     componentDidMount() {
         this.getAllUserCues()
-        this.getAllCues()
+        // this.getAllCues()
     }
 
     render() {
-        console.log("render in list", this.state)
+        // console.log("render in list", this.state)
         return (
             <div className="container-cards">
                 {this.state.user_Cues.map(user_Cue => <User_CueCard
-                    key={user_Cue.id} user_Cue={user_Cue} cues={this.state.cues} />
+                    key={user_Cue.id} user_Cue={user_Cue}  />
                 )}
             </div>
         )
