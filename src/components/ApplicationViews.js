@@ -35,7 +35,7 @@ class ApplicationViews extends Component {
                     return <CueDetail cueId={parseInt(props.match.params.cueId)} {...props} />
                 }} />
                 {/* route for user_cue list */}
-                <Route path="/userCues" render={(props) => {
+                <Route path="/user_Cues" render={(props) => {
                     if (this.props.user) {
                         return <User_CueList {...props} {...this.props} />
                     } else {

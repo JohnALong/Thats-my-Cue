@@ -21,11 +21,11 @@ class User_CueList extends Component {
 
     getAllUserCues = () => {
         const currentUser = JSON.parse(localStorage.getItem("credentials"))
-        APIManager.getWithItems("users", currentUser.id, "usercues")
+        APIManager.getWithItems("users", currentUser.id, "user_cues")
             .then((user_Cues) => {
                 this.setState({
                     user_Cues: user_Cues
-                })        
+                })      
             })
 
     }
