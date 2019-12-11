@@ -10,8 +10,7 @@ class CueList extends Component {
     }
 
     componentDidMount() {
-        // console.log("Practice List: componentDidMount", this.props)
-        APIManager.getAll()
+        APIManager.getAll(`cues/?_expand=builder&_expand=wrap&_expand=style`)
             .then((cues) => {
                 this.setState({
                     cues: cues
@@ -20,7 +19,6 @@ class CueList extends Component {
     }
 
     render() {
-        console.log("cue LIST: Render", this.state, this.props);
         return (
             <div className="container-cards">
                 {this.state.cues.map(cue => <CueCard

@@ -38,7 +38,7 @@ class Cue extends Component {
     }
 
     render() {
-        console.log("cue.js state", this.state)
+        console.log("cue.js state", this.getUser)
         return (
             <>
                 <NavBar user={this.state.user}
