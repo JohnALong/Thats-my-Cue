@@ -25,7 +25,7 @@ class User_CueList extends Component {
     }
 
     render() {
-        // console.log("render in user cue list", this.state.user_Cues)
+        console.log("render in user cue list", this.state.user_Cues)
         return (
             <div className="container-cards">
                 {this.state.user_Cues.map(user_Cue => <User_CueCard
