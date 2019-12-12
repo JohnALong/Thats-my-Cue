@@ -1,6 +1,10 @@
 const remoteURL = "http://localhost:5002"
 
 export default {
+    getSingleUserCue(id) {
+        return fetch(`${remoteURL}/user_cues?cueId=${id}&_expand=cue`).then(result => result.json())
+    },
+
     get(id) {
         return fetch(`${remoteURL}/cues/${id}/?_expand=builder&_expand=wrap&_expand=style`).then(result => result.json())
     },

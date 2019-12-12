@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import APIManager from '../../modules/APIManager'
+import { Link } from "react-router-dom"
 
 
 class User_CueCard extends Component {
@@ -14,18 +15,17 @@ class User_CueCard extends Component {
     componentDidMount() {
         APIManager.get(this.props.user_Cue.cueId)
             .then((cue) => {
-                console.log("cue in did mount", cue.image)
                 this.setState({
                     image: cue.image,
                     builderName: cue.builder.name,
-                    styleName: cue.style.styleName
+                    styleName: cue.style.name
                 })
             })
     }
 
     render() {
-        console.log("this.state in card", this.state)
-        console.log("this.props in card", this.props)
+        // console.log("this.state in card", this.state)
+        // console.log("this.props in card", this.props)
         return (
             <div>
                 <div>
@@ -33,6 +33,7 @@ class User_CueCard extends Component {
                     <h3>Builders Name: {this.state.builderName} </h3>
                     <p>Style & wrap info</p>
                     <p>info about this cue: {this.props.user_Cue.cue.data}</p>
+                    <Link to={`/user_Cues/${this.props.user_Cue.cueId}`}><button>Details</button></Link>
                 </div>
             </div>
         );

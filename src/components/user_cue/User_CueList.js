@@ -9,16 +9,6 @@ class User_CueList extends Component {
         user_Cues: [],
     }
 
-    getAllCues = () => {
-        APIManager.getAll(`cues/?_expand=builder&_expand=wrap&_expand=style`)
-            .then((cues) => {
-                this.setState({
-                    cues: cues
-                })
-                // console.log("cues in get all cues", cues)
-            })
-    }
-
     getAllUserCues = () => {
         const currentUser = JSON.parse(localStorage.getItem("credentials"))
         APIManager.getWithItems("users", currentUser.id, "user_cues")
@@ -35,11 +25,12 @@ class User_CueList extends Component {
     }
 
     render() {
-        // console.log("render in list", this.state)
+        // console.log("render in user cue list", this.state.user_Cues)
         return (
             <div className="container-cards">
                 {this.state.user_Cues.map(user_Cue => <User_CueCard
-                    key={user_Cue.id} user_Cue={user_Cue}  />
+                    key={user_Cue.id} user_Cue={user_Cue}
+                    {...this.props}  />
                 )}
             </div>
         )
