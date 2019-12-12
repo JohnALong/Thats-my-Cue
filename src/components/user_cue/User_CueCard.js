@@ -41,4 +41,3 @@ class User_CueCard extends Component {
 }
 
 export default User_CueCard;
-{/* <img src={require(`../cue_images/${this.props.cue.image}`)} alt="cue" /> */ }

@@ -11,6 +11,7 @@ import User_CueDetail from './user_cue/User_CueDetail'
 class ApplicationViews extends Component {
 
     render() {
+
         return (
             <React.Fragment>
                 {/* route to login */}
@@ -33,6 +34,7 @@ class ApplicationViews extends Component {
                 }} />
                 {/* route for cue details */}
                 <Route path="/cues/:cueId(\d+)" render={(props) => {
+                    console.log("cues list to details view", props)
                     return <CueDetail cueId={parseInt(props.match.params.cueId)} {...props} />
                 }} />
                 {/* route for user_cue list */}
@@ -44,8 +46,9 @@ class ApplicationViews extends Component {
                     }
                 }} />
 
-                <Route path="/user_Cues/:cueId(\d+)" render={(props) => {
-                    return <User_CueDetail cueId={parseInt(props.match.params.cueId)} {...props} {...this.props} />
+                <Route path="/user_Cues/:id(\d+)" render={(props) => {
+                    // console.log("props in details route", props)
+                    return <User_CueDetail id={parseInt(props.match.params.id)} {...props} {...this.props} />
                 }} />
             </React.Fragment>
         )

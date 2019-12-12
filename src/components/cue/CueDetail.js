@@ -44,8 +44,8 @@ class CueDetail extends Component {
     }
 
     render() {
-        console.log("details state", this.state)
-        console.log("details props", this.props)
+        // console.log("details state", this.state)
+        // console.log("details props", this.props)
         return (
             <div className="card">
                 <div className="card-content">

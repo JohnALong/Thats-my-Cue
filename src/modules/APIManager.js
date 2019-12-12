@@ -2,7 +2,7 @@ const remoteURL = "http://localhost:5002"
 
 export default {
     getSingleUserCue(id) {
-        return fetch(`${remoteURL}/user_cues?cueId=${id}&_expand=cue`).then(result => result.json())
+        return fetch(`${remoteURL}/user_cues/${id}`).then(result => result.json())
     },
 
     get(id) {
@@ -20,6 +20,13 @@ export default {
             body: JSON.stringify(newItem)
         }).then(data => data.json())
     },
+    // delete will only delete user_cue
+    delete(items, id) {
+        return fetch(`${remoteURL}/${items}/${id}`, {
+            method: "DELETE"
+        })
+            .then(result => result.json())
+    },
     //   fetch call to get users
     searchUser: (searchAll) => {
         return fetch(`${remoteURL}/users?&q=${searchAll}`)
@@ -28,6 +35,6 @@ export default {
     // fetch to return user cues
     getWithItems(items, id, secondaryItems) {
         return fetch(`${remoteURL}/${items}/${id}/${secondaryItems}?_expand=cue`)
-          .then(result => result.json())
-      }
+            .then(result => result.json())
+    }
 }
