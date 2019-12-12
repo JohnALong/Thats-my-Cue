@@ -305,7 +305,7 @@
       "builderId": 2,
       "styleId": 2,
       "wrapId": 2,
-      "data": "Nulla tellus. In sagittis dui vel nisl.",
+      "aboutCue": "Nulla tellus. In sagittis dui vel nisl.",
       "image": "Capone_4_Point.jpg"
     },
     {
@@ -313,7 +313,7 @@
       "builderId": 3,
       "styleId": 3,
       "wrapId": 3,
-      "data": "User_Cues shows this as id # 8",
+      "aboutCue": "User_Cues shows this as id # 8",
       "image": "Dave_Barenbrugge_Merry_Widow.jpg"
     },
     {
@@ -321,7 +321,7 @@
       "builderId": 4,
       "styleId": 4,
       "wrapId": 4,
-      "data": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
+      "aboutCue": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
       "image": "Eddie_Cohen_6_Point.jpg"
     },
     {
@@ -329,7 +329,7 @@
       "builderId": 5,
       "styleId": 5,
       "wrapId": 5,
-      "data": "Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
+      "aboutCue": "Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
       "image": "Hart_Merry_Widow.jpg"
     },
     {
@@ -337,7 +337,7 @@
       "builderId": 6,
       "styleId": 6,
       "wrapId": 6,
-      "data": "Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor.",
+      "aboutCue": "Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor.",
       "image": "Ivantsov_Butterfly.jpg"
     },
     {
@@ -345,7 +345,7 @@
       "builderId": 7,
       "styleId": 7,
       "wrapId": 7,
-      "data": "Nunc nisl.",
+      "aboutCue": "Nunc nisl.",
       "image": "Paul_Drexler_Inlay.jpg"
     },
     {
@@ -353,7 +353,7 @@
       "builderId": 8,
       "styleId": 8,
       "wrapId": 8,
-      "data": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros.",
+      "aboutCue": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros.",
       "image": "Shelby_Williams_6_Point.jpg"
     },
     {
@@ -361,7 +361,7 @@
       "builderId": 9,
       "styleId": 9,
       "wrapId": 9,
-      "data": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum.",
+      "aboutCue": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum.",
       "image": "Southwest_Inlays_Linen.jpg"
     },
     {
@@ -369,7 +369,7 @@
       "builderId": 10,
       "styleId": 10,
       "wrapId": 10,
-      "data": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia.",
+      "aboutCue": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia.",
       "image": "Steve_Lomax_4_Point.jpg"
     }
   ],

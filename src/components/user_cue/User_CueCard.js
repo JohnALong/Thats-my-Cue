@@ -32,7 +32,7 @@ class User_CueCard extends Component {
                     <img src={require(`../cue_images/${this.state.image}`)} alt="cue" width={500} height={300} mode='fit' />
                     <h3>Builders Name: {this.state.builderName} </h3>
                     <p>Style & wrap info</p>
-                    <p>info about this cue: {this.props.user_Cue.cue.data}</p>
+                    <p>info about this cue: {this.props.user_Cue.cue.aboutCue}</p>
                     <Link to={`/user_Cues/${this.props.user_Cue.cueId}`}><button>Details</button></Link>
                 </div>
             </div>

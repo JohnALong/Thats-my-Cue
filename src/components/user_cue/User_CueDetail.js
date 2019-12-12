@@ -1,11 +1,23 @@
 import React, { Component } from 'react';
 import APIManager from '../../modules/APIManager';
 
+// variable to hold this users cue
+let this_user_cue = []
+
+// variable to hold this users cue details
+let this_user_cue_details = []
 class User_CueDetail extends Component {
 
     state = {
-        cue: [],
-        cueDetails: []
+        image: "default_cues.jpg",
+        builderName: "",
+        wrapName: "",
+        styleName: "",
+        aboutCue: "",
+        notes: "",
+        quotedPrice: "",
+        builderContacted: false,
+        timeToBuild: "",
     }
 
     handleReturnToCues = () => {
@@ -17,28 +29,42 @@ class User_CueDetail extends Component {
     }
 
     getThisUsersCueDetails = () => {
-        APIManager.get(this.props.cueId)
-        .then((cueDetails) => {
-            console.log("cue in get user cue details", cueDetails)
-            this.setState({
-                cueDetails: cueDetails
+        return APIManager.get(this.props.cueId)
+            .then((cueDetails) => {
+                this_user_cue_details = cueDetails
+                // console.log("this_user_cue_details", this_user_cue_details)
+                return this_user_cue_details
             })
-        })
     }
 
     getThisUsersCue = () => {
-        APIManager.getSingleUserCue(this.props.cueId)
+        return APIManager.getSingleUserCue(this.props.cueId)
             .then((cue) => {
-                console.log("cue in get this user cue", cue)
-                this.setState({
-                    cue: cue
-                })
-            })  
+                this_user_cue = cue
+                // console.log("this_user_cue", this_user_cue)
+                return this_user_cue
+            })
     }
 
+    // .then(() => { console.log("user_cue in did mount", this_user_cue) })
+    // .then(() => { console.log("this user cue details in mount", this_user_cue_details) })
     componentDidMount() {
-       this.getThisUsersCue()
-       this.getThisUsersCueDetails()
+        this.getThisUsersCue()
+        this.getThisUsersCueDetails()
+            .then(() => {
+                // console.log("did mount", this_user_cue_details)
+                this.setState({
+                    image: this_user_cue_details.image,
+                    builderName: this_user_cue_details.builder.name,
+                    wrapName: this_user_cue_details.wrap.name,
+                    styleName: this_user_cue_details.style.name,
+                    aboutCue: this_user_cue_details.aboutCue,
+                    notes: this_user_cue[0].notes,
+                    quotedPrice: this_user_cue[0].quotedPrice,
+                    builderContacted: this_user_cue[0].builderContacted,
+                    timeToBuild: this_user_cue[0].timeToBuild,
+                })
+            })
     }
 
     render() {
@@ -47,9 +73,15 @@ class User_CueDetail extends Component {
         return (
             <div className="card">
                 <div className="card-content">
-                    <h3>Name: <span></span></h3>
-                    <p>Builder:is this working?</p>
-                    <p>Details: </p>
+                <img src={require(`../cue_images/${this.state.image}`)} alt="cue" />
+                    <h3>About Cue: {this.state.aboutCue}<span></span></h3>
+                    <p>Builder: {this.state.builderName}</p>
+                    <p>Style & Wrap names: style: {this.state.styleName} and wrap: {this.state.wrapName}</p>
+                    <p>your notes here: {this.state.notes}</p>
+                    <p>quoted price: {this.state.quotedPrice}</p>
+                    <p>time to build: {this.state.timeToBuild}</p>
+                    <label>builder Contacted?</label>
+                    <input type="checkbox" value={this.state.builderContacted}></input>
                 </div>
                 <div className="detailsButtons">
                     <button type="submit" >
