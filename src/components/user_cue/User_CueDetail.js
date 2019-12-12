@@ -85,7 +85,7 @@ class User_CueDetail extends Component {
                 </div>
                 <div className="detailsButtons">
                     <button type="submit" >
-                        Save
+                        Edit
             </button>
                     <button type="submit" onClick={this.handleReturnToCues} >
                         Back to Cues

@@ -7,7 +7,8 @@ class CueDetail extends Component {
         image: "default_cues.jpg",
         builderName: "",
         styleName: "",
-        aboutCue: ""
+        aboutCue: "",
+        loadingStatus: false
     }
 
     handleReturnToCues = () => {
@@ -15,7 +16,18 @@ class CueDetail extends Component {
     }
 
     handleSaveCue = () => {
-
+        const currentUser = JSON.parse(localStorage.getItem("credentials"))
+        this.setState({ loadingStatus: true });
+        const newCue = {
+            cueId: this.props.cueId,
+            userId: currentUser.id,
+            notes: "your notes here",
+            quotedPrice: "$ get from builder",
+            timeToBuild: "how long to make?",
+            builderContacted: false
+        };
+        APIManager.post("user_cues", newCue)
+        .then(() => this.props.history.push("/user_Cues"))
     }
 
     componentDidMount() {
@@ -25,12 +37,15 @@ class CueDetail extends Component {
                     image: cue.image,
                     builderName: cue.builder.name,
                     styleName: cue.style.name,
-                    aboutCue: cue.aboutCue
+                    aboutCue: cue.aboutCue,
+                    loadingStatus: false,
                 });
             });
     }
 
     render() {
+        console.log("details state", this.state)
+        console.log("details props", this.props)
         return (
             <div className="card">
                 <div className="card-content">
@@ -39,8 +54,9 @@ class CueDetail extends Component {
                     <p>Builder: {this.state.builderName}</p>
                     <p>Details: {this.state.aboutCue}</p>
                 </div>
-                <div className="detailsButtons">
-                    <button type="submit">
+                <div className="saveToUserCues">
+                    <button disabled={this.state.loadingStatus}
+                    onClick={this.handleSaveCue} type="submit">
                         Save
             </button>
                     <button type="submit" onClick={this.handleReturnToCues} >
