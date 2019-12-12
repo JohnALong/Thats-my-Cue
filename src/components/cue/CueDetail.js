@@ -40,7 +40,7 @@ class CueDetail extends Component {
                     <p>Details: {this.state.aboutCue}</p>
                 </div>
                 <div className="detailsButtons">
-                    <button type="submit" onClick={this.handleLogin}>
+                    <button type="submit">
                         Save
             </button>
                     <button type="submit" onClick={this.handleReturnToCues} >

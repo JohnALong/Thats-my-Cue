@@ -5,6 +5,7 @@ import CueList from './cue/CueList'
 import CueDetail from './cue/CueDetail'
 import Login from './auth/Login'
 import User_CueList from './user_cue/User_CueList'
+import User_CueDetail from './user_cue/User_CueDetail'
 
 
 class ApplicationViews extends Component {
@@ -35,14 +36,17 @@ class ApplicationViews extends Component {
                     return <CueDetail cueId={parseInt(props.match.params.cueId)} {...props} />
                 }} />
                 {/* route for user_cue list */}
-                <Route path="/user_Cues" render={(props) => {
+                <Route exact path="/user_Cues" render={(props) => {
                     if (this.props.user) {
                         return <User_CueList {...props} {...this.props} />
                     } else {
                         return <Redirect to="/login" />
                     }
                 }} />
-                />
+
+                <Route path="/user_Cues/:cueId(\d+)" render={(props) => {
+                    return <User_CueDetail cueId={parseInt(props.match.params.cueId)} {...props} {...this.props} />
+                }} />
             </React.Fragment>
         )
     }
