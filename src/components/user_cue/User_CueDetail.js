@@ -25,7 +25,10 @@ class User_CueDetail extends Component {
     }
 
     handleDeleteCue = () => {
-
+        APIManager.delete("user_cues", this.props.id)
+            .then(() => {
+                this.props.history.push("/user_Cues")
+            })
     }
     getThisUsersCueDetails = (cueId) => {
         return APIManager.get(cueId)
@@ -37,6 +40,7 @@ class User_CueDetail extends Component {
 
 
     getThisUsersCue = () => {
+        console.log("get this cue fetch", this.props.id)
         return APIManager.getSingleUserCue(this.props.id)
             .then((user_cue) => {
                 return user_cue
@@ -88,6 +92,7 @@ class User_CueDetail extends Component {
                     <button type="submit" onClick={this.handleReturnToCues} >
                         Back to Cues
             </button>
+            <button type="submit" onClick={this.handleDeleteCue}>Delete</button>
                 </div>
             </div>
         );

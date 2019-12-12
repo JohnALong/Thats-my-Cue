@@ -360,7 +360,7 @@
     {
       "id": 3,
       "cueId": 3,
-      "userId": 3,
+      "userId": 2,
       "notes": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante.",
       "quotedPrice": "$700",
       "builderContacted": false,
@@ -414,7 +414,7 @@
     {
       "id": 9,
       "cueId": 9,
-      "userId": 3,
+      "userId": 1,
       "notes": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
       "quotedPrice": "$975",
       "builderContacted": false,
@@ -423,15 +423,15 @@
     {
       "id": 10,
       "cueId": 8,
-      "userId": 1,
+      "userId": 2,
       "notes": "Cras pellentesque volutpat dui.",
       "quotedPrice": "$2950",
       "builderContacted": false,
       "timeToBuild": "12 months"
     },
     {
-      "cueId": 3,
-      "userId": 1,
+      "cueId": 10,
+      "userId": 3,
       "notes": "your notes here",
       "quotedPrice": "$ get from builder",
       "timeToBuild": "how long to make?",
