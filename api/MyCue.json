@@ -463,6 +463,15 @@
       "quotedPrice": "$2950",
       "builderContacted": false,
       "timeToBuild": "12 months"
+    },
+    {
+      "cueId": 1,
+      "userId": 10,
+      "notes": "your notes here",
+      "quotedPrice": "$ get from builder",
+      "timeToBuild": "how long to make?",
+      "builderContacted": false,
+      "id": 11
     }
   ]
 }
