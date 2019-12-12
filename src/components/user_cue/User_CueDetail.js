@@ -4,7 +4,8 @@ import APIManager from '../../modules/APIManager';
 class User_CueDetail extends Component {
 
     state = {
-        cue: []
+        cue: [],
+        cueDetails: []
     }
 
     handleReturnToCues = () => {
@@ -15,15 +16,29 @@ class User_CueDetail extends Component {
 
     }
 
-    componentDidMount() {
-        // console.log("did mount top props", this.props)
+    getThisUsersCueDetails = () => {
+        APIManager.get(this.props.cueId)
+        .then((cueDetails) => {
+            console.log("cue in get user cue details", cueDetails)
+            this.setState({
+                cueDetails: cueDetails
+            })
+        })
+    }
+
+    getThisUsersCue = () => {
         APIManager.getSingleUserCue(this.props.cueId)
             .then((cue) => {
-                console.log("cue in did mount", cue)
+                console.log("cue in get this user cue", cue)
                 this.setState({
                     cue: cue
                 })
-            })
+            })  
+    }
+
+    componentDidMount() {
+       this.getThisUsersCue()
+       this.getThisUsersCueDetails()
     }
 
     render() {
