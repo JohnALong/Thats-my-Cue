@@ -69,6 +69,11 @@ class User_CueEdit extends Component {
         this.setState(stateToChange)
     }
 
+    // to handle checkbox true/false
+    handleCheckBox = evt => {
+        this.setState({ builderContacted: !this.state.builderContacted })
+    }
+
     updateUser_Cue = evt => {
         evt.preventDefault()
         this.setState({ loadingStatus: true })
@@ -79,7 +84,7 @@ class User_CueEdit extends Component {
             builderContacted: this.state.builderContacted,
             timeToBuild: this.state.timeToBuild,
         }
-        APIManager.updateSelectedSection(editedUser_Cue)
+        APIManager.updateSelectedSection("user_cues", editedUser_Cue)
             .then(() => this.props.history.push("/user_Cues"))
     }
 
@@ -88,6 +93,8 @@ class User_CueEdit extends Component {
     }
 
     render() {
+        console.log("edit props", this.props)
+        console.log("edit state", this.state)
         return (
             <div className="card">
                 <div className="card-content">
@@ -96,15 +103,28 @@ class User_CueEdit extends Component {
                     <h3>About Cue: {this.state.aboutCue}<span></span></h3>
                     <p>Builder: {this.state.builderName}</p>
                     <p>Style & Wrap names: style: {this.state.styleName} and wrap: {this.state.wrapName}</p>
-                    <p>your notes here: {this.state.notes}</p>
-                    <p>quoted price: {this.state.quotedPrice}</p>
-                    <p>time to build: {this.state.timeToBuild}</p>
-                    <label>builder Contacted?</label>
-                    <input type="checkbox" value={this.state.builderContacted}></input>
+                    <form>edited part
+                    <input type="text" required
+                            onChange={this.handleFieldChange}
+                            id="notes" value={this.state.notes} />
+                        <input type="text" required
+                            onChange={this.handleFieldChange}
+                            id="quotedPrice" value={this.state.quotedPrice} />
+                        <input type="text" required
+                            onChange={this.handleFieldChange}
+                            id="timeToBuild" value={this.state.timeToBuild} />
+                        <div>
+                            <label>builder Contacted?</label>
+                            <input type="checkbox"
+                                checked={this.state.builderContacted}
+                                onChange={this.handleCheckBox}
+                                id="builderContacted"></input>
+                        </div>
+                    </form>
                 </div>
                 <div className="detailsButtons">
-                    <button type="submit" onClick={this.handleEditButton}>
-                        Edit
+                    <button type="submit" disabled={this.state.loadingStatus} onClick={this.updateUser_Cue}>
+                        Save
         </button>
                     <button type="submit" onClick={this.handleReturnToCues} >
                         Back to Cues

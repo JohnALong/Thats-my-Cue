@@ -70,8 +70,8 @@ class User_CueDetail extends Component {
     }
 
     render() {
-        console.log("detail props", this.props)
-        console.log("detail state", this.state)
+        // console.log("detail props", this.props)
+        // console.log("detail state", this.state)
         return (
             <div className="card">
                 <div className="card-content">
