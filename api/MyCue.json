@@ -458,7 +458,7 @@
       "notes": "your notes here",
       "quotedPrice": "$ get from builder",
       "timeToBuild": "how long to make?",
-      "builderContacted": false,
+      "builderContacted": true,
       "id": 14
     }
   ]

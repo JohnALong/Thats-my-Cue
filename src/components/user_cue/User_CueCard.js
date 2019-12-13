@@ -29,11 +29,12 @@ class User_CueCard extends Component {
         return (
             <div>
                 <div>
-                    <img src={require(`../cue_images/${this.state.image}`)} alt="cue" width={500} height={300} mode='fit' />
+                    <img src={require(`../cue_images/${this.state.image}`)} alt="cue" />
                     <h3>Builders Name: {this.state.builderName} </h3>
                     <p>Style & wrap info</p>
                     <p>info about this cue: {this.props.user_Cue.cue.aboutCue}</p>
                     <Link to={`/user_Cues/${this.props.user_Cue.id}`}><button>Details</button></Link>
+                    <Link to={`/cues/`}><button>Back to all Cues</button></Link>
                 </div>
             </div>
         );

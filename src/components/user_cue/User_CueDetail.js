@@ -73,9 +73,10 @@ class User_CueDetail extends Component {
         // console.log("detail props", this.props)
         // console.log("detail state", this.state)
         return (
-            <div className="card">
-                <div className="card-content">
+            <div>
+                <div>
                     <img src={require(`../cue_images/${this.state.image}`)} alt="cue" />
+                    <h1>User_Cue Details View</h1>
                     <h3>About Cue: {this.state.aboutCue}<span></span></h3>
                     <p>Builder: {this.state.builderName}</p>
                     <p>Style & Wrap names: style: {this.state.styleName} and wrap: {this.state.wrapName}</p>
@@ -83,7 +84,7 @@ class User_CueDetail extends Component {
                     <p>quoted price: {this.state.quotedPrice}</p>
                     <p>time to build: {this.state.timeToBuild}</p>
                     <label>builder Contacted?</label>
-                    <input type="checkbox" value={this.state.builderContacted}></input>
+                    <input type="checkbox" checked={this.state.builderContacted}></input>
                 </div>
                 <div className="detailsButtons">
                     <button type="submit" onClick={this.handleEditButton}>
