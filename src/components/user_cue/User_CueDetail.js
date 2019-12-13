@@ -20,8 +20,8 @@ class User_CueDetail extends Component {
         this.props.history.push("/user_Cues")
     }
 
-    handleEditCue = () => {
-
+    handleEditButton = () => {
+        this.props.history.push(`/user_Cues/${this.props.id}/edit`)
     }
 
     handleDeleteCue = () => {
@@ -34,7 +34,7 @@ class User_CueDetail extends Component {
         return APIManager.get(cueId)
             .then((user_cue_info) => {
                 return user_cue_info
-                 
+
             })
     }
 
@@ -47,21 +47,21 @@ class User_CueDetail extends Component {
             })
             .then((user_cue) => {
                 this.getThisUsersCueDetails(user_cue.cueId)
-                .then((user_cue_info) => {
-                    this.setState({
-                        image: user_cue_info.image,
-                        builderName: user_cue_info.builder.name,
-                        wrapName: user_cue_info.wrap.name,
-                        styleName: user_cue_info.style.name,
-                        aboutCue: user_cue_info.aboutCue,
-                        notes: user_cue.notes,
-                        quotedPrice: user_cue.quotedPrice,
-                        builderContacted: user_cue.builderContacted,
-                        timeToBuild: user_cue.timeToBuild,
-                        userCueId: user_cue.cueId
+                    .then((user_cue_info) => {
+                        this.setState({
+                            image: user_cue_info.image,
+                            builderName: user_cue_info.builder.name,
+                            wrapName: user_cue_info.wrap.name,
+                            styleName: user_cue_info.style.name,
+                            aboutCue: user_cue_info.aboutCue,
+                            notes: user_cue.notes,
+                            quotedPrice: user_cue.quotedPrice,
+                            builderContacted: user_cue.builderContacted,
+                            timeToBuild: user_cue.timeToBuild,
+                            userCueId: user_cue.cueId
+                        })
+                        console.log("user_cue_info and user_cue line 51", user_cue_info, user_cue)
                     })
-                    console.log("user_cue_info and user_cue line 51", user_cue_info, user_cue)
-                })
             })
     }
 
@@ -70,8 +70,8 @@ class User_CueDetail extends Component {
     }
 
     render() {
-        console.log("detail props", this.props)
-        console.log("detail state", this.state)
+        // console.log("detail props", this.props)
+        // console.log("detail state", this.state)
         return (
             <div className="card">
                 <div className="card-content">
@@ -86,13 +86,13 @@ class User_CueDetail extends Component {
                     <input type="checkbox" value={this.state.builderContacted}></input>
                 </div>
                 <div className="detailsButtons">
-                    <button type="submit" >
+                    <button type="submit" onClick={this.handleEditButton}>
                         Edit
             </button>
                     <button type="submit" onClick={this.handleReturnToCues} >
                         Back to Cues
             </button>
-            <button type="submit" onClick={this.handleDeleteCue}>Delete</button>
+                    <button type="submit" onClick={this.handleDeleteCue}>Delete</button>
                 </div>
             </div>
         );

@@ -6,6 +6,7 @@ import CueDetail from './cue/CueDetail'
 import Login from './auth/Login'
 import User_CueList from './user_cue/User_CueList'
 import User_CueDetail from './user_cue/User_CueDetail'
+import User_CueEdit from './user_cue/User_CueEdit'
 
 
 class ApplicationViews extends Component {
@@ -45,8 +46,14 @@ class ApplicationViews extends Component {
                         return <Redirect to="/login" />
                     }
                 }} />
+                {/* route for user_cue single cue details (notice path by id of user_cue not cueId - many people may have same cue saved) */}
+                <Route
+                    path="/user_Cues/:id(\d+)/edit" render={props => {
+                        return <User_CueEdit id={parseInt(props.match.params.id)} {...props} {...this.props} />
+                    }}
+                />
 
-                <Route path="/user_Cues/:id(\d+)" render={(props) => {
+                <Route exact path="/user_Cues/:id(\d+)" render={(props) => {
                     // console.log("props in details route", props)
                     return <User_CueDetail id={parseInt(props.match.params.id)} {...props} {...this.props} />
                 }} />
