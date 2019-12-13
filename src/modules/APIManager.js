@@ -20,7 +20,27 @@ export default {
             body: JSON.stringify(newItem)
         }).then(data => data.json())
     },
-    // delete will only delete user_cue
+    // edit will only be used to edit user_cue
+    update(items, editedItem) {
+        return fetch(`${remoteURL}/${items}/${editedItem.id}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(editedItem)
+        }).then(data => data.json());
+    },
+    // patch method for user_cue update for edits - everything can be edited except cueId
+    updateSelectedSection(items, editedItem) {
+        return fetch(`${remoteURL}/${items}/${editedItem.id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(editedItem)
+        }).then(data => data.json());
+    },
+    // delete will only be used to delete user_cue
     delete(items, id) {
         return fetch(`${remoteURL}/${items}/${id}`, {
             method: "DELETE"
