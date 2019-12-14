@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import APIManager from '../../modules/APIManager';
+import { Container, Row, Col, Button, Card, Image } from 'react-bootstrap';
+import "./CueCard.css"
 
 class CueDetail extends Component {
 
@@ -44,8 +46,8 @@ class CueDetail extends Component {
     }
 
     render() {
-        // console.log("details state", this.state)
-        // console.log("details props", this.props)
+        console.log("details state", this.state)
+        console.log("details props", this.props)
         return (
             <div className="card">
                 <div className="card-content">
@@ -55,13 +57,13 @@ class CueDetail extends Component {
                     <p>Details: {this.state.aboutCue}</p>
                 </div>
                 <div className="saveToUserCues">
-                    <button disabled={this.state.loadingStatus}
+                    <Button variant="primary" disabled={this.state.loadingStatus}
                     onClick={this.handleSaveCue} type="submit">
                         Save
-            </button>
-                    <button type="submit" onClick={this.handleReturnToCues} >
+            </Button>
+                    <Button varian="info" type="submit" onClick={this.handleReturnToCues} >
                         Back to Cues
-            </button>
+            </Button>
                 </div>
             </div>
         );

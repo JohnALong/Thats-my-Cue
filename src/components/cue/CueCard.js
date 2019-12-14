@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom"
-import { Container, Row, Col, Button, Image } from 'react-bootstrap';
+import { Container, Row, Col, Button, Card, Image } from 'react-bootstrap';
+import "./CueCard.css"
 
 class CueCard extends Component {
   render() {
@@ -8,10 +9,15 @@ class CueCard extends Component {
       <Container>
         <Row>
           <Col sm>
-            <Image src={require(`../cue_images/${this.props.cue.image}`)} alt="cue" fluid />
-            <h3>Name: <span>{this.props.cue.builder.name}</span></h3>
-            <p>Style: {this.props.cue.style.name}</p>
-            <Link to={`/cues/${this.props.cue.id}`}><Button variant="info">Details</Button></Link>
+            <Card className="cardbox" style={{ width: '24rem', height: 'auto' }}>
+              <div className="image_holder">
+                <Image className="card_images" rounded variant="top" src={require(`../cue_images/${this.props.cue.image}`)} alt="cue" style={{ maxHeight: 'auto' }} /></div>
+              <Card.Body>
+                <Card.Title>Name: <span>{this.props.cue.builder.name}</span></Card.Title>
+                <Card.Body>Style: {this.props.cue.style.name}</Card.Body>
+                <Link to={`/cues/${this.props.cue.id}`}><Button variant="info" size="lg" block>Details</Button></Link>
+              </Card.Body>
+            </Card>
           </Col>
         </Row>
       </Container>

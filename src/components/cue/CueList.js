@@ -20,11 +20,14 @@ class CueList extends Component {
 
     render() {
         return (
-            <div className="container-cards">
+            <>
+            <h1 className="cardList">All Cues</h1>
+            <div className="cards">
                 {this.state.cues.map(cue => <CueCard
                     key={cue.id} cue={cue} />
                 )}
             </div>
+            </>
         )
     }
 }
