@@ -58,7 +58,7 @@ class Login extends Component {
             <form onSubmit={this.handleLogin}>
                 <fieldset>
                     <h3>Please sign in</h3>
-                    <div className="formgrid">
+                    <div>
                         <input onChange={this.handleFieldChange} type="text"
                             id="name"
                             placeholder="Full Name"

@@ -96,10 +96,10 @@ class User_CueEdit extends Component {
         console.log("edit props", this.props)
         console.log("edit state", this.state)
         return (
-            <div className="card">
-                <div className="card-content">
+            <div>
+                <div>
                     <h1>Edit page</h1>
-                    <img src={require(`../cue_images/${this.state.image}`)} alt="cue" width={500} height={300} mode='fit' />
+                    <img src={require(`../cue_images/${this.state.image}`)} alt="cue" />
                     <h3>About Cue: {this.state.aboutCue}<span></span></h3>
                     <p>Builder: {this.state.builderName}</p>
                     <p>Style & Wrap names: style: {this.state.styleName} and wrap: {this.state.wrapName}</p>
@@ -122,7 +122,7 @@ class User_CueEdit extends Component {
                         </div>
                     </form>
                 </div>
-                <div className="detailsButtons">
+                <div>
                     <button type="submit" disabled={this.state.loadingStatus} onClick={this.updateUser_Cue}>
                         Save
         </button>
