@@ -34,9 +34,9 @@ class ApplicationViews extends Component {
                     }
                 }} />
                 {/* route for cue details */}
-                <Route path="/cues/:cueId(\d+)" render={(props) => {
+                <Route path="/cues/:id(\d+)" render={(props) => {
                     console.log("cues list to details view", props)
-                    return <CueDetail cueId={parseInt(props.match.params.cueId)} {...props} />
+                    return <CueDetail id={parseInt(props.match.params.id)} {...props} />
                 }} />
                 {/* route for user_cue list */}
                 <Route exact path="/user_Cues" render={(props) => {
