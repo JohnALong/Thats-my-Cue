@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import APIManager from '../../modules/APIManager';
-import { Container, Row, Col, Button, Card, Image } from 'react-bootstrap';
+import { Button, Card, Image } from 'react-bootstrap';
 import "./CueCard.css"
 
 class CueDetail extends Component {
@@ -29,7 +29,7 @@ class CueDetail extends Component {
             builderContacted: false
         };
         APIManager.post("user_cues", newCue)
-        .then(() => this.props.history.push("/user_Cues"))
+            .then(() => this.props.history.push("/user_Cues"))
     }
 
     componentDidMount() {
@@ -49,23 +49,24 @@ class CueDetail extends Component {
         console.log("details state", this.state)
         console.log("details props", this.props)
         return (
-            <div className="card">
-                <div className="card-content">
-                    <img src={require(`../cue_images/${this.state.image}`)} alt="cue" />
-                    <h3>Name: <span>{this.state.styleName}</span></h3>
-                    <p>Builder: {this.state.builderName}</p>
-                    <p>Details: {this.state.aboutCue}</p>
-                </div>
-                <div className="saveToUserCues">
-                    <Button variant="primary" disabled={this.state.loadingStatus}
-                    onClick={this.handleSaveCue} type="submit">
-                        Save
+            <Card className="cardbox" style={{ width: '24rem', height: 'auto' }}>
+                <div className="image_holder">
+                    <Image className="card_images" rounded variant="top" src={require(`../cue_images/${this.state.image}`)} alt="cue" style={{ maxHeight: 'auto' }} /></div>
+                <Card.Body>
+                    <Card.Title>Name: {this.state.styleName}</Card.Title>
+                    <Card.Body>Builder: {this.state.builderName}</Card.Body>
+                    <Card.Body>Details: {this.state.aboutCue}</Card.Body>
+                    <div className="saveToUserCues">
+                        <Button variant="primary" disabled={this.state.loadingStatus}
+                            onClick={this.handleSaveCue} type="submit">
+                            Save
             </Button>
-                    <Button varian="info" type="submit" onClick={this.handleReturnToCues} >
-                        Back to Cues
+                        <Button varian="info" type="submit" onClick={this.handleReturnToCues} >
+                            Back to Cues
             </Button>
-                </div>
-            </div>
+                    </div>
+                </Card.Body>
+            </Card>
         );
     }
 }
