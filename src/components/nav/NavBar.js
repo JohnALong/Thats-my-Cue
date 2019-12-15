@@ -11,15 +11,15 @@ class NavBar extends Component {
             <NavBarBS sticky="top" className="navbar bg-dark flex-md-nowrap p-0 shadow">
                 <div className="navbar-brand"><img src={require(`../cue_images/capstone_logo.png`)} width="40" height="30" alt="cue" /></div>
                 <span><ul className="nav nav-pills nav-fill nav-justified">
-                    <li className="nav-item"><Link className="nav-link" to="/">Go Home</Link></li>
+                    <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
                     {(this.props.user) ?
                         <>
-                            <li className="nav-item"><Link className="nav-link" to="/cues">All Cues</Link></li>
-                            <li className="nav-item"><Link className="nav-link" to="/user_cues">My Cues</Link></li>
-                            <li className="nav-item"><Link className="nav-link" to="/login" onClick={this.props.clearUser} >Log Out</Link></li>
+                            <li className="nav-item"><Link className="nav-link" to="/cues">AllCues</Link></li>
+                            <li className="nav-item"><Link className="nav-link" to="/user_cues">MyCues</Link></li>
+                            <li className="nav-item"><Link className="nav-link" to="/login" onClick={this.props.clearUser} >LogOut</Link></li>
                         </>
                         :
-                        <li className="nav-item"><Link className="nav-link" to="/login">Log In</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/login">LogIn</Link></li>
                     }
                 </ul></span>
             </NavBarBS>

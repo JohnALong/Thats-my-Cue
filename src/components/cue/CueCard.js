@@ -8,7 +8,7 @@ class CueCard extends Component {
     return (
       <Container>
         <Row>
-          <Col sm>
+          <Col sm className="card_container">
             <Card className="cardbox" style={{ width: '24rem', height: 'auto' }}>
               <div className="image_holder">
                 <Image className="card_images" rounded variant="top" src={require(`../cue_images/${this.props.cue.image}`)} alt="cue" style={{ maxHeight: 'auto' }} /></div>

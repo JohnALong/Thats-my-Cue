@@ -1,9 +1,16 @@
+html, body {
+    height: 100vh;
+}
 .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: dimgrey;
+}
+.container {
+   margin: 0 auto;
+   display: inline-block; 
 }
 .image_holder {
     width: 360px;
@@ -19,11 +26,14 @@
     align-items: center;
     background-image: url(../cue_images/card_background.jpg);
 }
+.card_container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .cardList {
     text-align: center;
     background-color: dimgrey;
     margin-bottom: 0px;
-}
-#root {
-    background-color: dimgrey;
 }

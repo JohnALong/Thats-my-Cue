@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import APIManager from '../../modules/APIManager';
 import { Button, Card, Image } from 'react-bootstrap';
-import "./CueCard.css"
+import "./CueDetail.css"
 
 class CueDetail extends Component {
 
@@ -46,27 +46,27 @@ class CueDetail extends Component {
     }
 
     render() {
-        console.log("details state", this.state)
-        console.log("details props", this.props)
+        // console.log("details state", this.state)
+        // console.log("details props", this.props)
         return (
-            <Card className="cardbox" style={{ width: '24rem', height: 'auto' }}>
+            <div className="details_view">
                 <div className="image_holder">
                     <Image className="card_images" rounded variant="top" src={require(`../cue_images/${this.state.image}`)} alt="cue" style={{ maxHeight: 'auto' }} /></div>
-                <Card.Body>
-                    <Card.Title>Name: {this.state.styleName}</Card.Title>
-                    <Card.Body>Builder: {this.state.builderName}</Card.Body>
-                    <Card.Body>Details: {this.state.aboutCue}</Card.Body>
+                <div>
+                    <p>Name: {this.state.styleName}</p>
+                    <p>Builder: {this.state.builderName}</p>
+                    <p>Details: {this.state.aboutCue}</p>
                     <div className="saveToUserCues">
                         <Button variant="primary" disabled={this.state.loadingStatus}
                             onClick={this.handleSaveCue} type="submit">
                             Save
-            </Button>
+                        </Button>
                         <Button varian="info" type="submit" onClick={this.handleReturnToCues} >
                             Back to Cues
-            </Button>
+                        </Button>
                     </div>
-                </Card.Body>
-            </Card>
+                </div>
+            </div>
         );
     }
 }

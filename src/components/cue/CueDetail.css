@@ -1,0 +1,19 @@
+.image_holder {
+    width: 360px;
+    height: auto;
+    object-fit: contain;
+    margin-top: 10px;
+}
+.card_images {
+    width: 100%;
+    object-fit: contain;
+}
+.details_view {
+    height: 100vh;
+    min-height: 100vh;
+}
+.saveToUserCues {
+    display: flex;
+    justify-content: space-between;
+    
+}
