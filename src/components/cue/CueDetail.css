@@ -11,9 +11,21 @@
 .details_view {
     height: 100vh;
     min-height: 100vh;
+    background-image: url(../cue_images/card_background.jpg);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.saveToUserCues {
+.detailsButtons {
     display: flex;
     justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
     
+}
+.details_info {
+    font-weight: bold;
+    text-align: center;
 }

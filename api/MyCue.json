@@ -24,59 +24,59 @@
   "builders": [
     {
       "id": 1,
-      "name": "Darrin Tuff",
-      "contactInfo": "297-970-9794"
+      "name": "Leonard Bludworth",
+      "contactInfo": "https://www.facebook.com/leonard.bludworth.1"
     },
     {
       "id": 2,
-      "name": "Yoshi Cookson",
-      "contactInfo": "779-226-9868"
+      "name": "Mike Capone",
+      "contactInfo": "301-349-2187"
     },
     {
       "id": 3,
-      "name": "Herb Kitcherside",
-      "contactInfo": "581-761-5743"
+      "name": "Dave Barenbrugge",
+      "contactInfo": "agentcue@earthlink.net"
     },
     {
       "id": 4,
-      "name": "Kelci Chaplyn",
-      "contactInfo": "188-747-5181"
+      "name": "Eddie Cohen",
+      "contactInfo": "eddie@cohencues.com"
     },
     {
       "id": 5,
-      "name": "Tally Rylatt",
-      "contactInfo": "117-232-4234"
+      "name": "John Hart",
+      "contactInfo": "j_hart@none.com"
     },
     {
       "id": 6,
-      "name": "Deeanne Mursell",
-      "contactInfo": "139-442-1050"
+      "name": "Eugene Ivantsov",
+      "contactInfo": "https://www.facebook.com/williebladeofficial/"
     },
     {
       "id": 7,
-      "name": "Franchot Woolway",
-      "contactInfo": "975-295-1140"
+      "name": "Paul Drexler",
+      "contactInfo": "pfdstudios.com"
     },
     {
       "id": 8,
-      "name": "Kaylyn Ahlf",
-      "contactInfo": "851-368-4934"
+      "name": "Shelby Williams",
+      "contactInfo": "https://www.facebook.com/shelby.williams.94849"
     },
     {
       "id": 9,
-      "name": "Frazer Grigson",
-      "contactInfo": "697-945-8874"
+      "name": "Jerry & Laurie Franklin",
+      "contactInfo": "https://www.facebook.com/southwestcue/"
     },
     {
       "id": 10,
-      "name": "Angelico Stonnell",
-      "contactInfo": "644-217-1992"
+      "name": "Steve Lomax",
+      "contactInfo": "https://www.facebook.com/steve.lomax.9"
     }
   ],
   "wraps": [
     {
       "id": 1,
-      "name": "massa donec dapibus",
+      "name": "irish linen black/white",
       "aboutWrap": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique."
     },
     {
@@ -128,8 +128,8 @@
   "styles": [
     {
       "id": 1,
-      "name": "Wylie Arpin",
-      "aboutStyle": "Phasellus id sapien in sapien iaculis congue."
+      "name": "Inlays only",
+      "aboutStyle": "Cue made from solid wood (no splicing or joining other materials to create), inlays cut and input by hand."
     },
     {
       "id": 2,
@@ -267,7 +267,7 @@
       "builderId": 1,
       "styleId": 1,
       "wrapId": 1,
-      "aboutCue": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis.",
+      "aboutCue": "All ivory inlays, Bacote butt sleeve, Bacote forearm.  Twin silver rings at all locations including both shafts. Black phenolic butt cap.  Black phenolic joint collar.  Bludworth SS 3/8x11.5 joint pin. Butt is 29 inches & weighs 15.95oz.  Shaft 1 is 29 inches & 3.71oz.  Ferrule 1 is LBM & 13mm.  Shaft 2 is 29 inches and 3.32oz.  Ferrule 2 is LBM & 12.5mm",
       "image": "Bludworth_Inlays.jpg"
     },
     {
@@ -469,6 +469,15 @@
       "timeToBuild": "how long to make?",
       "builderContacted": false,
       "id": 15
+    },
+    {
+      "cueId": 10,
+      "userId": 1,
+      "notes": "your notes here",
+      "quotedPrice": "$ get from builder",
+      "timeToBuild": "how long to make?",
+      "builderContacted": false,
+      "id": 16
     }
   ]
 }
