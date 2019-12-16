@@ -14,6 +14,11 @@
       "id": 3,
       "name": "OVAL TINE",
       "password": "aJwinNVp"
+    },
+    {
+      "name": "TREY",
+      "password": "123",
+      "id": 4
     }
   ],
   "builders": [
@@ -339,6 +344,32 @@
     }
   ],
   "user_cues": [
-    
+    {
+      "cueId": 10,
+      "userId": 4,
+      "notes": "your notes here",
+      "quotedPrice": "$ get from builder",
+      "timeToBuild": "how long to make?",
+      "builderContacted": false,
+      "id": 1
+    },
+    {
+      "cueId": 1,
+      "userId": 4,
+      "notes": "your notes here",
+      "quotedPrice": "$ get from builder",
+      "timeToBuild": "how long to make?",
+      "builderContacted": true,
+      "id": 2
+    },
+    {
+      "cueId": 8,
+      "userId": 4,
+      "notes": "your notes here",
+      "quotedPrice": "$ get from builder",
+      "timeToBuild": "how long to make?",
+      "builderContacted": false,
+      "id": 3
+    }
   ]
 }
