@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import APIManager from '../../modules/APIManager';
-import { Container, Row, Col, Button, Card, Image } from 'react-bootstrap';
-import "./CueCard.css"
+import { Button, Image } from 'react-bootstrap';
+import "./CueDetail.css"
 
 
 class CueDetail extends Component {
@@ -92,21 +92,22 @@ class CueDetail extends Component {
         console.log("details state", this.state)
         console.log("details props", this.props)
         return (
-            <div className="card">
-                <div className="card-content">
-                    <img src={require(`../cue_images/${this.state.image}`)} alt="cue" />
-                    <h3>Name: <span>{this.state.styleName}</span></h3>
+            <div className="details_view">
+                <div className="image_holder">
+                    <Image className="card_images" rounded variant="top" src={require(`../cue_images/${this.state.image}`)} alt="cue" style={{ maxHeight: 'auto' }} /></div>
+                <div className="details_info">
+                    <p>Style: <span>{this.state.styleName}</span></p>
                     <p>Builder: {this.state.builderName}</p>
                     <p>Details: {this.state.aboutCue}</p>
-                </div>
-                <div className="saveToUserCues">
-                    <Button variant="primary" disabled={this.state.loadingStatus}
-                        onClick={this.handleGetCueData} type="submit">
-                        Save
+                    <div className="detailsButtons">
+                        <Button variant="primary" disabled={this.state.loadingStatus}
+                            onClick={this.handleGetCueData} type="submit">
+                            Save
             </Button>
-                    <Button varian="info" type="submit" onClick={this.handleReturnToCues} >
-                        Back to Cues
+                        <Button varian="info" type="submit" onClick={this.handleReturnToCues} >
+                            Back to Cues
             </Button>
+                    </div>
                 </div>
             </div>
         );

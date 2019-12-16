@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import APIManager from '../../modules/APIManager'
 import { Link } from "react-router-dom"
+import { Container, Row, Col, Button, Card, Image } from 'react-bootstrap';
+import "../cue/CueCard.css"
 
 
 class User_CueCard extends Component {
@@ -27,16 +29,24 @@ class User_CueCard extends Component {
         console.log("this.state in card", this.state)
         console.log("this.props in card", this.props)
         return (
-            <div>
-                <div>
-                    <img src={require(`../cue_images/${this.state.image}`)} alt="cue" />
-                    <h3>Builders Name: {this.state.builderName} </h3>
-                    <p>Style & wrap info</p>
-                    <p>info about this cue: {this.props.user_Cue.cue.aboutCue}</p>
-                    <Link to={`/user_Cues/${this.props.user_Cue.id}`}><button>Details</button></Link>
-                    <Link to={`/cues/`}><button>Back to all Cues</button></Link>
-                </div>
-            </div>
+            <Container>
+                <Row>
+                    <Col sm className="card_container">
+                        <Card className="cardbox" style={{ width: '24 rem', height: 'auto' }}>
+                            <div className="image_holder">
+                                <Image className="card_images" rounded variant="top" src={require(`../cue_images/${this.state.image}`)} alt="cue" style={{ maxHeight: 'auto' }} /></div>
+                            <Card.Body>
+                                <Card.Title>Builders Name: {this.state.builderName} </Card.Title>
+                                <Card.Body>Style & wraCard.Body info</Card.Body>
+                                <Card.Body>info about this cue: {this.props.user_Cue.cue.aboutCue}</Card.Body>
+                                <div className="detailsButtons">
+                                    <Link to={`/user_Cues/${this.props.user_Cue.id}`}><Button variant="info">Details</Button></Link>
+                                    <Link to={`/cues/`}><Button variant="primary">Back to all Cues</Button></Link></div>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
+            </Container>
         );
     }
 }

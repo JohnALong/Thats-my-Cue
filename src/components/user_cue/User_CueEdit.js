@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import APIManager from '../../modules/APIManager'
+import { Form, Row, Col, Button, Image } from 'react-bootstrap'
+import './User_CueEdit.css'
 
 class User_CueEdit extends Component {
     state = {
@@ -96,40 +98,55 @@ class User_CueEdit extends Component {
         console.log("edit props", this.props)
         console.log("edit state", this.state)
         return (
-            <div>
-                <div>
-                    <h1>Edit page</h1>
-                    <img src={require(`../cue_images/${this.state.image}`)} alt="cue" />
+            <div className="allEditView">
+                <h1 className="heading">Your Notes</h1>
+                <Form className="form">
+                    <Form.Group>
+                        <Form.Label>Update your notes</Form.Label>
+                        <Form.Control as="textarea" rows="4" required
+                            onChange={this.handleFieldChange}
+                            id="notes" value={this.state.notes} />
+                    </Form.Group>
+                    <Row>
+                        <Col>
+                            <Form.Group>
+                                <input type="text" required
+                                    onChange={this.handleFieldChange}
+                                    id="quotedPrice" value={this.state.quotedPrice} />
+                            </Form.Group>
+                        </Col>
+                        <Col>
+                            <Form.Group>
+                                <Form.Label>Quoted Price</Form.Label>
+                                <Form.Control type="text" required
+                                    onChange={this.handleFieldChange}
+                                    id="timeToBuild" value={this.state.timeToBuild} />
+                            </Form.Group>
+                        </Col>
+                    </Row>
+                    <Form.Group>
+                        <Form.Check type="checkbox" label="Builderd Contacted"
+                            checked={this.state.builderContacted}
+                            onChange={this.handleCheckBox}
+                            id="builderContacted"></Form.Check>
+                    </Form.Group>
+                </Form>
+                <div className="details_view">
+                    <div className="image_holder">
+                        <Image className="card_images" rounded variant="bottom" src={require(`../cue_images/${this.state.image}`)} alt="cue" style={{ maxHeight: 'auto' }} />
+                    </div>
                     <h3>About Cue: {this.state.aboutCue}<span></span></h3>
                     <p>Builder: {this.state.builderName}</p>
                     <p>Style & Wrap names: style: {this.state.styleName} and wrap: {this.state.wrapName}</p>
-                    <form>edited part
-                    <input type="text" required
-                            onChange={this.handleFieldChange}
-                            id="notes" value={this.state.notes} />
-                        <input type="text" required
-                            onChange={this.handleFieldChange}
-                            id="quotedPrice" value={this.state.quotedPrice} />
-                        <input type="text" required
-                            onChange={this.handleFieldChange}
-                            id="timeToBuild" value={this.state.timeToBuild} />
-                        <div>
-                            <label>builder Contacted?</label>
-                            <input type="checkbox"
-                                checked={this.state.builderContacted}
-                                onChange={this.handleCheckBox}
-                                id="builderContacted"></input>
-                        </div>
-                    </form>
-                </div>
-                <div>
-                    <button type="submit" disabled={this.state.loadingStatus} onClick={this.updateUser_Cue}>
-                        Save
-        </button>
-                    <button type="submit" onClick={this.handleReturnToCues} >
-                        Back to Cues
-        </button>
-                    <button type="submit" onClick={this.handleDeleteCue}>Delete</button>
+                    <div className="detailsButtons">
+                        <Button variant="success" type="submit" disabled={this.state.loadingStatus} onClick={this.updateUser_Cue}>
+                            Save
+        </Button>
+                        <Button variant="primary" type="submit" onClick={this.handleReturnToCues} >
+                            Back to Cues
+        </Button>
+                        <Button variant="danger" type="submit" onClick={this.handleDeleteCue}>Delete</Button>
+                    </div>
                 </div>
             </div>
         )
