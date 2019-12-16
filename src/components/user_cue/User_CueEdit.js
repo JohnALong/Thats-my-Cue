@@ -18,6 +18,7 @@ class User_CueEdit extends Component {
         loadingStatus: true
     }
 
+    // function to get all relevant data about this cue from cues end point
     getThisUsersCueDetails = (cueId) => {
         return APIManager.get(cueId)
             .then((user_cue_info) => {
@@ -26,6 +27,7 @@ class User_CueEdit extends Component {
             })
     }
 
+    // function call to get base data about this users cue from user cues end point and then call to end point from cues to get remaining info necessary
     getThisUsersCue = () => {
         console.log("get this cue fetch", this.props.id)
         return APIManager.getSingleUserCue(this.props.id)
@@ -53,10 +55,11 @@ class User_CueEdit extends Component {
             })
     }
 
+    // function to handle routing back to user_cues
     handleReturnToCues = () => {
         this.props.history.push("/user_Cues")
     }
-
+    // function to handle deleting selected cue
     handleDeleteCue = () => {
         APIManager.delete("user_cues", this.props.id)
             .then(() => {
@@ -76,6 +79,7 @@ class User_CueEdit extends Component {
         this.setState({ builderContacted: !this.state.builderContacted })
     }
 
+    // function to edit this cue
     updateUser_Cue = evt => {
         evt.preventDefault()
         this.setState({ loadingStatus: true })

@@ -8,6 +8,7 @@ import "../cue/CueCard.css"
 class User_CueCard extends Component {
 
     state = {
+        // default image to avoid page not rendering on load
         image: "default_cues.jpg",
         builderName: "",
         styleName: ""

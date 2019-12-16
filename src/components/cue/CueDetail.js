@@ -5,6 +5,7 @@ import "./CueDetail.css"
 
 
 class CueDetail extends Component {
+    // variable to hold current user info to avoid being able to save same cue twice
     currentUser = JSON.parse(localStorage.getItem("credentials"))
 
     state = {
@@ -15,15 +16,15 @@ class CueDetail extends Component {
         loadingStatus: false,
         cueId: ""
     }
-
+// function call to support button to return to all cues view
     handleReturnToCues = () => {
         this.props.history.push("/cues")
     }
-
+// function call to handle what happens if user selects cue already saved to their profile
     handleReRoute = () => {
         this.props.history.push("/user_Cues")
     }
-
+// function call to get details of selected cue for viewing
     getThisCue = () => {
         APIManager.get(this.props.id)
             .then((cue) => {
@@ -37,22 +38,17 @@ class CueDetail extends Component {
                 });
             });
     }
-
+// function call to either route to users cues or post new cue to user profile and then route to users cues
     handleGetCueData = () => {
-        console.log("1")
         APIManager.getWithItems("users", this.currentUser.id, "user_cues")
             .then((user_Cues) => {
-                console.log("2")
                 return user_Cues
             })
             .then((user_Cues) => {
-                console.log("3")
                 const result = user_Cues.filter(user_Cue => user_Cue.cueId === this.props.id)
                 if (result.length > 0) {
-                    console.log("4")
                     this.handleReRoute()
                 } else {
-                    console.log("5")
                     this.setState({ loadingStatus: true });
                     const newCue = {
                         cueId: this.props.id,
@@ -68,29 +64,14 @@ class CueDetail extends Component {
             })
     }
 
-    // handleSaveCue = () => {
-    //     const currentUser = JSON.parse(localStorage.getItem("credentials"))
-    //     this.setState({ loadingStatus: true });
-    //     const newCue = {
-    //         id: this.props.id,
-    //         userId: currentUser.id,
-    //         notes: "your notes here",
-    //         quotedPrice: "$ get from builder",
-    //         timeToBuild: "how long to make?",
-    //         builderContacted: false
-    //     };
-    //     APIManager.post("user_cues", newCue)
-    //         .then(() => this.props.history.push("/user_Cues"))
-    // }
-
     componentDidMount() {
         this.getThisCue()
 
     }
 
     render() {
-        console.log("details state", this.state)
-        console.log("details props", this.props)
+        // console.log("details state", this.state)
+        // console.log("details props", this.props)
         return (
             <div className="details_view">
                 <div className="image_holder">

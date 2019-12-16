@@ -17,7 +17,7 @@ class Login extends Component {
         stateToChange[evt.target.id] = evt.target.value
         this.setState(stateToChange)
     }
-
+// fetch call to loop through users end point and compare name to person logging in and set local storage for user
     searchUsers = (e) => {
         APIManager.searchUser(this.state.name)
             .then((existingUser) => {
@@ -43,10 +43,6 @@ class Login extends Component {
 
     handleLogin = (e) => {
         e.preventDefault()
-        /*
-            For now, just store the email and password that
-            the customer enters into local storage.
-        */
         this.searchUsers()
         this.props.setUser({ name: this.state.name, password: this.state.password })
         this.props.history.push("/home");

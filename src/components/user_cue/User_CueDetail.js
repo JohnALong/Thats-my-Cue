@@ -18,20 +18,25 @@ class User_CueDetail extends Component {
         userCueId: "",
     }
 
+    // function call to handle pathing for return to your cues button
     handleReturnToCues = () => {
         this.props.history.push("/user_Cues")
     }
 
+    // function call to send user to edit user cues form
     handleEditButton = () => {
         this.props.history.push(`/user_Cues/${this.props.id}/edit`)
     }
 
+    // function call to delete the selected cue from users profile and route back to their cues list
     handleDeleteCue = () => {
         APIManager.delete("user_cues", this.props.id)
             .then(() => {
                 this.props.history.push("/user_Cues")
             })
     }
+
+    // function call to get all details about selected cue user is viewing
     getThisUsersCueDetails = (cueId) => {
         return APIManager.get(cueId)
             .then((user_cue_info) => {
@@ -40,7 +45,7 @@ class User_CueDetail extends Component {
             })
     }
 
-
+    // function call to get single cue base info from props of user cues and then call function for fetch call to return all relevent details about that cue from cues end point
     getThisUsersCue = () => {
         console.log("get this cue fetch", this.props.id)
         return APIManager.getSingleUserCue(this.props.id)

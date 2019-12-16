@@ -9,6 +9,7 @@ class User_CueList extends Component {
         user_Cues: [],
     }
 
+    // function to fetch user cue and cue data
     getAllUserCues = () => {
         const currentUser = JSON.parse(localStorage.getItem("credentials"))
         APIManager.getWithItems("users", currentUser.id, "user_cues")
@@ -21,7 +22,6 @@ class User_CueList extends Component {
 
     componentDidMount() {
         this.getAllUserCues()
-        // this.getAllCues()
     }
 
     render() {

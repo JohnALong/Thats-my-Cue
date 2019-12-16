@@ -10,6 +10,7 @@ class CueList extends Component {
     }
 
     componentDidMount() {
+        // fetch call getting all cues available for viewing for any users
         APIManager.getAll(`cues/?_expand=builder&_expand=wrap&_expand=style`)
             .then((cues) => {
                 this.setState({

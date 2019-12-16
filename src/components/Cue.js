@@ -9,9 +9,11 @@ class Cue extends Component {
         user: false,
         userId: ""
     }
-    
+
+    // function to check for logged in status
     isAuthenticated = () => localStorage.getItem("credentials") !== null
-    
+
+    // variable to set state and store login info
     setUser = authObj => {
         localStorage.setItem(
             "credentials",
@@ -22,8 +24,10 @@ class Cue extends Component {
         });
     }
 
+    // variable to hold log in info for later access
     getUser = JSON.parse(localStorage.getItem("credentials"))
 
+    // function to log out user
     clearUser = () => {
         localStorage.removeItem("credentials")
 
@@ -43,11 +47,11 @@ class Cue extends Component {
         return (
             <>
                 <NavBar user={this.state.user}
-                clearUser={this.clearUser} />
+                    clearUser={this.clearUser} />
                 <ApplicationViews user={this.state.user}
-                setUser={this.setUser}
-                searchUsers={this.searchUsers}
-                getUser={this.getUser} />
+                    setUser={this.setUser}
+                    searchUsers={this.searchUsers}
+                    getUser={this.getUser} />
             </>
 
         );
