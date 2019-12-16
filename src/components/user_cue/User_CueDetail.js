@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import APIManager from '../../modules/APIManager';
+import { Button, Image } from 'react-bootstrap';
+import "../cue/CueDetail.css"
 
 class User_CueDetail extends Component {
 
@@ -73,9 +75,10 @@ class User_CueDetail extends Component {
         // console.log("detail props", this.props)
         // console.log("detail state", this.state)
         return (
-            <div>
-                <div>
-                    <img src={require(`../cue_images/${this.state.image}`)} alt="cue" />
+            <div className="details_view">
+                <div className="image_holder">
+                    <img src={require(`../cue_images/${this.state.image}`)} alt="cue" /></div>
+                <div className="details_info">
                     <h1>User_Cue Details View</h1>
                     <h3>About Cue: {this.state.aboutCue}<span></span></h3>
                     <p>Builder: {this.state.builderName}</p>
@@ -87,15 +90,13 @@ class User_CueDetail extends Component {
                     <input type="checkbox" checked={this.state.builderContacted}></input>
                 </div>
                 <div className="detailsButtons">
-                    <button type="submit" onClick={this.handleEditButton}>
-                        Edit
-            </button>
-                    <button type="submit" onClick={this.handleReturnToCues} >
-                        Back to Cues
-            </button>
-                    <button type="submit" onClick={this.handleDeleteCue}>Delete</button>
+                    <Button variant="info" type="submit" onClick={this.handleEditButton}>
+                        Edit</Button>
+                    <Button variant="primary" type="submit" onClick={this.handleReturnToCues} >
+                        Back to Cues</Button>
+                    <Button variant="danger" type="submit" onClick={this.handleDeleteCue}>Delete</Button>
                 </div>
-            </div>
+            </div >
         );
     }
 }

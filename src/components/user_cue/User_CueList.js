@@ -28,13 +28,15 @@ class User_CueList extends Component {
         console.log("render in user cue list", this.state.user_Cues)
         return (
             <>
-            <h1>Your Cues</h1>
-            <div>
-                {this.state.user_Cues.map(user_Cue => <User_CueCard
-                    key={user_Cue.id} user_Cue={user_Cue}
-                    {...this.props}  />
-                )}
-            </div>
+                <div className="cardList">
+                    <h1>My Cues</h1>
+                    <div className="cards">
+                        {this.state.user_Cues.map(user_Cue => <User_CueCard
+                            key={user_Cue.id} user_Cue={user_Cue}
+                            {...this.props} />
+                        )}
+                    </div>
+                </div>
             </>
         )
     }

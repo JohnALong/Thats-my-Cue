@@ -1,14 +1,18 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom"
+import { Jumbotron, Image, Button } from 'react-bootstrap'
 
 class Home extends Component {
     render() {
         return (
             <>
-                <h1>That's my cue!!!</h1>
-                <img src={require(`../cue_images/default_cues.jpg`)} alt="cue" />
-                <h3>Would you like a new cue?</h3>
-                <Link to={`/cues`}><button>Yes I Would!</button></Link>
+                <Jumbotron>
+                    <div className="image_holder">
+                        <Image className="card_images" rounded variant="top" src={require(`../cue_images/default_cues.jpg`)} alt="cue" style={{ maxHeight: 'auto' }} /></div>
+                    <h3>Are You Looking <br/> 
+                    For a New Cue?</h3>
+                    <Link to={`/cues`}><Button variant="success">Yes I Am!</Button></Link>
+                </Jumbotron>
             </>
         )
     }
