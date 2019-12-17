@@ -12,6 +12,7 @@ class Home extends Component {
                     <h3>Are You Looking <br/> 
                     For a New Cue?</h3>
                     <Link to={`/cues`}><Button variant="success">Yes I Am!</Button></Link>
+                    <Link to={`/randomCue`}><Button variant="warning">Lucky Cue</ Button></Link>
                 </Jumbotron>
             </>
         )

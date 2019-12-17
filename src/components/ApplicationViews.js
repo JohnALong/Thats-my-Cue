@@ -7,6 +7,7 @@ import Login from './auth/Login'
 import User_CueList from './user_cue/User_CueList'
 import User_CueDetail from './user_cue/User_CueDetail'
 import User_CueEdit from './user_cue/User_CueEdit'
+import RandomCueDetail from './cue/randomCueDetail'
 
 
 class ApplicationViews extends Component {
@@ -24,6 +25,16 @@ class ApplicationViews extends Component {
                 <Route exact path="/" render={(props) => {
                     return <Home />
                 }} />
+                {/* route for randomcue view */}
+                <Route path="/randomCue" render={(props) => {
+                    console.log("random cue route", this.props.user)
+                    if (this.props.user) {
+                        return <RandomCueDetail {...props} {...this.props} />
+                    } else {
+                        return <Redirect to="/login" />
+                    }
+                }} />
+
                 {/* route for cues list */}
                 <Route exact path="/cues" render={(props) => {
                     console.log("cues route", props)
@@ -57,6 +68,7 @@ class ApplicationViews extends Component {
                     // console.log("props in details route", props)
                     return <User_CueDetail id={parseInt(props.match.params.id)} {...props} {...this.props} />
                 }} />
+
             </React.Fragment>
         )
     }

@@ -29,6 +29,11 @@
       "name": "JOHN",
       "password": "123",
       "id": 6
+    },
+    {
+      "name": "PIP",
+      "password": "123",
+      "id": 7
     }
   ],
   "builders": [
@@ -407,6 +412,15 @@
       "timeToBuild": "how long to make?",
       "builderContacted": false,
       "id": 6
+    },
+    {
+      "cueId": 10,
+      "userId": 7,
+      "notes": "your notes here",
+      "quotedPrice": "$1400",
+      "timeToBuild": "how long to make?",
+      "builderContacted": true,
+      "id": 7
     }
   ]
 }
