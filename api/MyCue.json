@@ -1,11 +1,5 @@
 {
-  "users": [
-    {
-      "name": "GUY",
-      "password": "123",
-      "id": 1
-    }
-  ],
+  "users": [],
   "builders": [
     {
       "id": 1,
@@ -14,48 +8,48 @@
     },
     {
       "id": 2,
-      "name": "Yoshi Cookson",
-      "contactInfo": "779-226-9868"
+      "name": "Mike Capone",
+      "contactInfo": "301-349-2187"
     },
     {
       "id": 3,
-      "name": "Herb Kitcherside",
-      "contactInfo": "581-761-5743"
+      "name": "Dave Barenbrugge",
+      "contactInfo": "480-213-5416"
     },
     {
       "id": 4,
-      "name": "Kelci Chaplyn",
-      "contactInfo": "188-747-5181"
+      "name": "Eddie Cohen",
+      "contactInfo": "eddie@cohencues.com"
     },
     {
       "id": 5,
-      "name": "Tally Rylatt",
-      "contactInfo": "117-232-4234"
+      "name": "John Hart",
+      "contactInfo": "none@none.com"
     },
     {
       "id": 6,
-      "name": "Deeanne Mursell",
-      "contactInfo": "139-442-1050"
+      "name": "Willie Blade",
+      "contactInfo": "willieblade.com"
     },
     {
       "id": 7,
-      "name": "Franchot Woolway",
-      "contactInfo": "975-295-1140"
+      "name": "Paul Drexler",
+      "contactInfo": "860 295-8500"
     },
     {
       "id": 8,
-      "name": "Kaylyn Ahlf",
-      "contactInfo": "851-368-4934"
+      "name": "Shelby Williams",
+      "contactInfo": "https://www.facebook.com/shelby.williams.94849"
     },
     {
       "id": 9,
-      "name": "Frazer Grigson",
-      "contactInfo": "697-945-8874"
+      "name": "Southwest Cues",
+      "contactInfo": "702-870-9615"
     },
     {
       "id": 10,
-      "name": "Angelico Stonnell",
-      "contactInfo": "644-217-1992"
+      "name": "Steve Lomax",
+      "contactInfo": "706-776-1252"
     }
   ],
   "wraps": [
@@ -66,100 +60,40 @@
     },
     {
       "id": 2,
-      "name": "amet nunc viverra",
-      "aboutWrap": "Proin at turpis a pede posuere nonummy."
+      "name": "Leather",
+      "aboutWrap": "A leather wrap is possibly one of the most noticeable upgrades that can be completed on a prized pool cue. Leather Cue Wraps are a great way to improve the grip and overall feel of your cue while also adding a touch of personal flare. Leather wraps come in a variety of finishes including bullhide, sharkskin, embossed lizard, eel skin, and ostrich."
     },
     {
       "id": 3,
-      "name": "maecenas",
-      "aboutWrap": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque."
-    },
-    {
-      "id": 4,
-      "name": "cum sociis natoque",
-      "aboutWrap": "Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia."
-    },
-    {
-      "id": 5,
-      "name": "quis",
-      "aboutWrap": "Nam dui."
-    },
-    {
-      "id": 6,
-      "name": "est lacinia",
-      "aboutWrap": "Mauris ullamcorper purus sit amet nulla."
-    },
-    {
-      "id": 7,
-      "name": "nibh in lectus",
-      "aboutWrap": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus."
-    },
-    {
-      "id": 8,
-      "name": "vestibulum rutrum",
-      "aboutWrap": "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla."
-    },
-    {
-      "id": 9,
-      "name": "eu",
-      "aboutWrap": "Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus."
-    },
-    {
-      "id": 10,
-      "name": "nulla dapibus dolor",
-      "aboutWrap": "Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci."
+      "name": "Wrapless",
+      "aboutWrap": "Offers an extremely high level of grip.  The finish applied to the wood reacts with the sweat on your hands and causes them to stick to it. Some people may think that because it's like the shaft that it must be slippery, but that couldn't be further from the truth. Wrapless also affords the builder the opportunity to further stretch customization with different woods, inlays, and rings."
     }
   ],
   "styles": [
     {
       "id": 1,
       "name": "Inlays Only",
-      "aboutStyle": "When you want to take it to the next level, you can have inlays in your pool cue. That’s when the design is cut into the wood. The result is much more refined designs, and the potential to turn your cue into a real piece of artwork."
+      "aboutStyle": "When you want to take it to the next level, you can have inlays in your pool cue. That’s when designs are cut into the wood, and different materials are used to fill those designs. The result is much more refined designs, and the potential to turn your cue into a real piece of artwork."
     },
     {
       "id": 2,
-      "name": "Theo Coronas",
-      "aboutStyle": "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst."
+      "name": "Full Splice Points",
+      "aboutStyle": "A full splice cue means that the points are milled at both ends and interlock with one another. The term FULL Splice means that the bottom portion of the point is one piece that extends to the length of the handle of the cue. This process is often seen in high-end custom cues and house cues. It is a very stable and strong construction method that requires special milling equipment and is not widely practiced. In fact, there are only a handful of cue makers out there that still use this method due to its costly and time consuming production process. That being said, you can bet that most full splice cues are expensive."
     },
     {
       "id": 3,
-      "name": "Nevin Lesslie",
-      "aboutStyle": "Proin risus. Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante."
+      "name": "Points with Inlays",
+      "aboutStyle": "Giving you the best of both worlds.  Points and inlays enables the ultimate in expression."
     },
     {
       "id": 4,
-      "name": "Cort Santacrole",
-      "aboutStyle": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque."
+      "name": "Merry Widow",
+      "aboutStyle": "Also known as a Plain Jane, a merry widow cue has no points and no inlays.  Wrapped or wrap-less, it usually includes decorative rings at the C and D positions."
     },
     {
       "id": 5,
-      "name": "Lynelle Harp",
-      "aboutStyle": "Donec ut dolor."
-    },
-    {
-      "id": 6,
-      "name": "Evangelina Pengilly",
-      "aboutStyle": "Nulla tempus."
-    },
-    {
-      "id": 7,
-      "name": "Janelle Monelle",
-      "aboutStyle": "Aliquam non mauris."
-    },
-    {
-      "id": 8,
-      "name": "Margaret Drowsfield",
-      "aboutStyle": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis."
-    },
-    {
-      "id": 9,
-      "name": "Haydon Haggarth",
-      "aboutStyle": "Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio."
-    },
-    {
-      "id": 10,
-      "name": "Drusi Bayford",
-      "aboutStyle": "Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus."
+      "name": "Full Splice Butterfly",
+      "aboutStyle": " full splice cue means that the points are milled at both ends and interlock with one another. The term FULL Splice means that the bottom portion of the point is one piece that extends to the length of the handle of the cue. Butterfly construction is an extra layer of complexity in that the points are reversed into the handle of the cue leading to rounded ends that bring to mind the wings of a butterfly. It is a very stable and strong construction method that requires special milling equipment and is not widely practiced. In fact, there are only a handful of cue makers out there that still use this method due to its costly and time consuming production process. That being said, you can bet that most full splice cues are expensive."
     }
   ],
   "cues": [
@@ -175,8 +109,8 @@
       "id": 9,
       "builderId": 2,
       "styleId": 2,
-      "wrapId": 2,
-      "aboutCue": "Nulla tellus. In sagittis dui vel nisl.",
+      "wrapId": 1,
+      "aboutCue": "Brazilian Rosewood into birdseye maple.  4 points, Hoppe ring, nice stich ringwork and white/brown linen wrap!",
       "image": "Capone_4_Point.jpg"
     },
     {
@@ -184,63 +118,63 @@
       "builderId": 3,
       "styleId": 3,
       "wrapId": 3,
-      "aboutCue": "User_Cues shows this as id # 8",
+      "aboutCue": "Pomelle Bubinga Merry Widow with eel skin wrap",
       "image": "Dave_Barenbrugge_Merry_Widow.jpg"
     },
     {
       "id": 7,
       "builderId": 4,
-      "styleId": 4,
-      "wrapId": 4,
-      "aboutCue": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
+      "styleId": 3,
+      "wrapId": 2,
+      "aboutCue": "Grey and blue beauty.  Ebony forearm, with six stabilized Curly Maple points. 6 silver diamond inlays with black borders. Grey Spanish Bull wrap.",
       "image": "Eddie_Cohen_6_Point.jpg"
     },
     {
       "id": 6,
       "builderId": 5,
-      "styleId": 5,
-      "wrapId": 5,
-      "aboutCue": "Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
+      "styleId": 4,
+      "wrapId": 3,
+      "aboutCue": "60 inch cue made from stabilized spalted maple along with a matching spalted extension.",
       "image": "Hart_Merry_Widow.jpg"
     },
     {
       "id": 5,
       "builderId": 6,
-      "styleId": 6,
-      "wrapId": 6,
-      "aboutCue": "Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor.",
+      "styleId": 5,
+      "wrapId": 3,
+      "aboutCue": "Bacote full splice into ebony butterfly with paper and wood veneers.",
       "image": "Ivantsov_Butterfly.jpg"
     },
     {
       "id": 4,
       "builderId": 7,
-      "styleId": 7,
-      "wrapId": 7,
-      "aboutCue": "Nunc nisl.",
+      "styleId": 1,
+      "wrapId": 2,
+      "aboutCue": "PFD Number 4 of 5. Paul did 5 cues built on Spain blanks. This is number 4 and extremely fancy. You can see the work Paul had done on the cue. This cue has not seen the light of day since it was sold to a collector that shelved it. It was made in 2002.",
       "image": "Paul_Drexler_Inlay.jpg"
     },
     {
       "id": 3,
       "builderId": 8,
-      "styleId": 8,
-      "wrapId": 8,
-      "aboutCue": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros.",
+      "styleId": 2,
+      "wrapId": 3,
+      "aboutCue": "Figured Indian ebony with points and handle made from curly Walnut.",
       "image": "Shelby_Williams_6_Point.jpg"
     },
     {
       "id": 2,
       "builderId": 9,
-      "styleId": 9,
-      "wrapId": 9,
-      "aboutCue": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum.",
+      "styleId": 1,
+      "wrapId": 1,
+      "aboutCue": "The unicorn of SouthWest Cues.  This inlay only all ebony cue features over 450 individual ivory inlays.  Wrap is white irish linen with brown flecks.",
       "image": "Southwest_Inlays_Linen.jpg"
     },
     {
       "id": 1,
       "builderId": 10,
-      "styleId": 10,
-      "wrapId": 10,
-      "aboutCue": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia.",
+      "styleId": 2,
+      "wrapId": 1,
+      "aboutCue": "4 cocobolo points into curly maple forearm.  Maple checked ring work at A-E, and solid black irish linen wrap.",
       "image": "Steve_Lomax_4_Point.jpg"
     }
   ],
