@@ -1,0 +1,30 @@
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+.homeContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.home_image_holder {
+    width: 360px;
+    height: auto;
+}
+.home_headline {
+    text-align: center;
+    width: 100%;
+}
+.home_card_images {
+    max-width: 100%;
+    height: auto;
+}
+.homeButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 360px;
+}
