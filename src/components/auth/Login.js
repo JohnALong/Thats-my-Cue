@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import APIManager from "../../modules/APIManager"
-import {allUpperCase} from '../../modules/helpers'
+import { allUpperCase } from '../../modules/helpers'
+import { Form, Button } from 'react-bootstrap'
 
 class Login extends Component {
 
@@ -55,26 +56,24 @@ class Login extends Component {
 
     render() {
         return (
-            <form onSubmit={this.handleLogin}>
-                <fieldset>
-                    <h3>Please sign in</h3>
-                    <div>
-                        <input onChange={this.handleFieldChange} type="text"
-                            id="name"
-                            placeholder="Full Name"
-                            required="" autoFocus="" />
-                        <label htmlFor="inputName">Full Name</label>
-                        <input onChange={this.handleFieldChange} type="password"
-                            id="password"
-                            placeholder="Password"
-                            required="" autoFocus="" />
-                        <label htmlFor="inputPassword">Password</label>
-                    </div>
-                    <button type="submit" onClick={this.handleLogin}>
-                        Sign in
-            </button>
-                </fieldset>
-            </form>
+            <Form onSubmit={this.handleLogin}>
+                    <h3>Please sign in/Register</h3>
+                <Form.Group>
+                    <Form.Control onChange={this.handleFieldChange} type="text"
+                        id="name"
+                        placeholder="User Name"
+                        required="" autoFocus="" />
+                    <Form.Label htmlFor="inputName">User Name</Form.Label>
+                    <Form.Control onChange={this.handleFieldChange} type="password"
+                        id="password"
+                        placeholder="Password"
+                        required="" autoFocus="" />
+                    <Form.Label htmlFor="inputPassword">Password</Form.Label>
+                </Form.Group>
+                <Button type="submit" onClick={this.handleLogin}>
+                    Sign in
+            </Button>
+            </Form>
         )
     }
 
