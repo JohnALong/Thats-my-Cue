@@ -24,6 +24,36 @@ class RandomCueDetail extends Component {
         this.props.history.push("/user_Cues")
     }
 
+    handleGetCueData = () => {
+        console.log("1 in random", this.currentUser)
+        APIManager.getWithItems("users", this.currentUser.id, "user_cues")
+            .then((user_Cues) => {
+                console.log("2 in random")
+                return user_Cues
+            })
+            .then((user_Cues) => {
+                console.log("3 in random")
+                const result = user_Cues.filter(user_Cue => user_Cue.cueId === this.props.id)
+                if (result.length > 0) {
+                    console.log("4 in random")
+                    this.handleReRoute()
+                } else {
+                    console.log("5 in random", this.props)
+                    this.setState({ loadingStatus: true });
+                    const newCue = {
+                        cueId: this.state.id,
+                        userId: this.currentUser.id,
+                        notes: "your notes here",
+                        quotedPrice: "$ get from builder",
+                        timeToBuild: "how long to make?",
+                        builderContacted: false
+                    };
+                    APIManager.post("user_cues", newCue)
+                        .then(() => this.props.history.push("/user_Cues"))
+                }
+            })
+    }
+
     handleGetAndRandomizeCue = () => {
         APIManager.getAll(`cues/?_expand=builder&_expand=wrap&_expand=style`)
         .then((cues) => {
@@ -48,6 +78,7 @@ class RandomCueDetail extends Component {
     }
 
     render() {
+        console.log("render", this.state.id)
         return (
             <div className="details_view">
                 <div className="image_holder">

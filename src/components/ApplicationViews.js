@@ -23,7 +23,7 @@ class ApplicationViews extends Component {
                 }} />
                 {/* route for home */}
                 <Route exact path="/" render={(props) => {
-                    return <Home />
+                    return <Home {...this.props} {...props} />
                 }} />
                 {/* route for randomcue view */}
                 <Route path="/randomCue" render={(props) => {

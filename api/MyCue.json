@@ -1,46 +1,16 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "ANY ONE",
-      "password": "dplcneMO7"
-    },
-    {
-      "id": 2,
-      "name": "AMOS ANDY",
-      "password": "0vndr1sL4"
-    },
-    {
-      "id": 3,
-      "name": "OVAL TINE",
-      "password": "aJwinNVp"
-    },
-    {
-      "name": "TREY",
+      "name": "GUY",
       "password": "123",
-      "id": 4
-    },
-    {
-      "name": "JISIE",
-      "password": "123",
-      "id": 5
-    },
-    {
-      "name": "JOHN",
-      "password": "123",
-      "id": 6
-    },
-    {
-      "name": "PIP",
-      "password": "123",
-      "id": 7
+      "id": 1
     }
   ],
   "builders": [
     {
       "id": 1,
-      "name": "Darrin Tuff",
-      "contactInfo": "297-970-9794"
+      "name": "Leonard Bludworth",
+      "contactInfo": "https://www.facebook.com/leonard.bludworth.1"
     },
     {
       "id": 2,
@@ -91,8 +61,8 @@
   "wraps": [
     {
       "id": 1,
-      "name": "massa donec dapibus",
-      "aboutWrap": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique."
+      "name": "Irish Linen",
+      "aboutWrap": "Double Pressed Irish Linen Wrap is the industry standard and the choice of many players for grips. Top-quality European imported thread is available in a wide variety of colors. 100% Double Pressed Irish Linen Wraps should be professionally installed and will provide flawless performance year after year."
     },
     {
       "id": 2,
@@ -143,8 +113,8 @@
   "styles": [
     {
       "id": 1,
-      "name": "Wylie Arpin",
-      "aboutStyle": "Phasellus id sapien in sapien iaculis congue."
+      "name": "Inlays Only",
+      "aboutStyle": "When you want to take it to the next level, you can have inlays in your pool cue. That’s when the design is cut into the wood. The result is much more refined designs, and the potential to turn your cue into a real piece of artwork."
     },
     {
       "id": 2,
@@ -192,97 +162,13 @@
       "aboutStyle": "Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus."
     }
   ],
-  "styleTypes": [
-    {
-      "id": 1,
-      "styleId": 1
-    },
-    {
-      "id": 2,
-      "styleId": 2
-    },
-    {
-      "id": 3,
-      "styleId": 3
-    },
-    {
-      "id": 4,
-      "styleId": 4
-    },
-    {
-      "id": 5,
-      "styleId": 5
-    },
-    {
-      "id": 6,
-      "styleId": 6
-    },
-    {
-      "id": 7,
-      "styleId": 7
-    },
-    {
-      "id": 8,
-      "styleId": 8
-    },
-    {
-      "id": 9,
-      "styleId": 9
-    },
-    {
-      "id": 10,
-      "styleId": 10
-    }
-  ],
-  "wrapTypes": [
-    {
-      "id": 1,
-      "wrapId": 1
-    },
-    {
-      "id": 2,
-      "wrapId": 2
-    },
-    {
-      "id": 3,
-      "wrapId": 3
-    },
-    {
-      "id": 4,
-      "wrapId": 4
-    },
-    {
-      "id": 5,
-      "wrapId": 5
-    },
-    {
-      "id": 6,
-      "wrapId": 6
-    },
-    {
-      "id": 7,
-      "wrapId": 7
-    },
-    {
-      "id": 8,
-      "wrapId": 8
-    },
-    {
-      "id": 9,
-      "wrapId": 9
-    },
-    {
-      "id": 10,
-      "wrapId": 10
-    }
-  ],
   "cues": [
     {
       "id": 10,
       "builderId": 1,
       "styleId": 1,
       "wrapId": 1,
-      "aboutCue": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis.",
+      "aboutCue": "All ivory inlays with Bacote butt sleeve and Bacote forearm. Twin silver rings at all locations including both shafts.  Black Irish linen, with silver speckles. Black phenolic butt cap, black phenolic joint collar.",
       "image": "Bludworth_Inlays.jpg"
     },
     {
@@ -358,69 +244,5 @@
       "image": "Steve_Lomax_4_Point.jpg"
     }
   ],
-  "user_cues": [
-    {
-      "cueId": 10,
-      "userId": 4,
-      "notes": "your notes here",
-      "quotedPrice": "$ get from builder",
-      "timeToBuild": "how long to make?",
-      "builderContacted": false,
-      "id": 1
-    },
-    {
-      "cueId": 1,
-      "userId": 4,
-      "notes": "your notes here",
-      "quotedPrice": "$ get from builder",
-      "timeToBuild": "how long to make?",
-      "builderContacted": true,
-      "id": 2
-    },
-    {
-      "cueId": 8,
-      "userId": 4,
-      "notes": "your notes here",
-      "quotedPrice": "$ get from builder",
-      "timeToBuild": "how long to make?",
-      "builderContacted": false,
-      "id": 3
-    },
-    {
-      "cueId": 7,
-      "userId": 5,
-      "notes": "hello",
-      "quotedPrice": "$ get from builder",
-      "timeToBuild": "how long to make?",
-      "builderContacted": true,
-      "id": 4
-    },
-    {
-      "cueId": 8,
-      "userId": 6,
-      "notes": "your notes here",
-      "quotedPrice": "$ get from builder",
-      "timeToBuild": "how long to make?",
-      "builderContacted": false,
-      "id": 5
-    },
-    {
-      "cueId": 6,
-      "userId": 6,
-      "notes": "your notes here",
-      "quotedPrice": "$ get from builder",
-      "timeToBuild": "how long to make?",
-      "builderContacted": false,
-      "id": 6
-    },
-    {
-      "cueId": 10,
-      "userId": 7,
-      "notes": "your notes here",
-      "quotedPrice": "$1400",
-      "timeToBuild": "how long to make?",
-      "builderContacted": true,
-      "id": 7
-    }
-  ]
+  "user_cues": []
 }
