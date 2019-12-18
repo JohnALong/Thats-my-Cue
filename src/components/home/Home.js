@@ -22,7 +22,7 @@ class Home extends Component {
                         <div>
                             <Link to={`/cues`}><Button variant="success">Yes I Am!</Button></Link>
                         </div>
-                        <OverlayTrigger placement="auto" overlay={this.handleToolTip} className="randomImageHolder">
+                        <OverlayTrigger trigger={['hover']} placement="auto" overlay={this.handleToolTip} className="randomImageHolder">
                             <Image roundedCircle src={require
                                 ('../cue_images/smallEightBall.png')} style={{ maxHeight: 'auto' }} onClick={this.handleRandom} />
                         </OverlayTrigger>
