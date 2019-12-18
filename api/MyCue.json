@@ -1,5 +1,15 @@
 {
   "users": [
+    {
+      "name": "THISUSER",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "name": "RDB",
+      "password": "123",
+      "id": 2
+    }
   ],
   "builders": [
     {
@@ -111,15 +121,15 @@
       "builderId": 2,
       "styleId": 2,
       "wrapId": 1,
-      "aboutCue": "Brazilian Rosewood into birdseye maple.  4 points, Hoppe ring, nice stich ringwork and white/brown linen wrap!",
+      "aboutCue": "Brazilian Rosewood into birdseye maple.  4 points, Hoppe ring, nice stich ringwork and white/brown linen wrap.",
       "image": "Capone_4_Point.jpg"
     },
     {
       "id": 8,
       "builderId": 3,
       "styleId": 4,
-      "wrapId": 3,
-      "aboutCue": "Pomelle Bubinga Merry Widow with eel skin wrap",
+      "wrapId": 2,
+      "aboutCue": "Pomelle Bubinga Merry Widow with eel skin leather wrap",
       "image": "Dave_Barenbrugge_Merry_Widow.jpg"
     },
     {
@@ -127,7 +137,7 @@
       "builderId": 4,
       "styleId": 3,
       "wrapId": 2,
-      "aboutCue": "Grey and blue beauty.  Ebony forearm, with six stabilized Curly Maple points. 6 silver diamond inlays with black borders. Grey Spanish Bull wrap.",
+      "aboutCue": "Grey and blue beauty.  Ebony forearm, with six stabilized Curly Maple points. 6 silver diamond inlays with black borders. Grey Spanish Bull leather wrap.",
       "image": "Eddie_Cohen_6_Point.jpg"
     },
     {
@@ -135,7 +145,7 @@
       "builderId": 5,
       "styleId": 4,
       "wrapId": 3,
-      "aboutCue": "60 inch cue made from stabilized spalted maple along with a matching spalted extension.",
+      "aboutCue": "60 inch wrapless merry widow made from stabilized spalted maple along with a matching spalted extension.",
       "image": "Hart_Merry_Widow.jpg"
     },
     {
@@ -143,7 +153,7 @@
       "builderId": 6,
       "styleId": 5,
       "wrapId": 3,
-      "aboutCue": "Bacote full splice into ebony butterfly with paper and wood veneers.",
+      "aboutCue": "Bacote wrapless full splice into ebony butterfly with paper and wood veneers.",
       "image": "Ivantsov_Butterfly.jpg"
     },
     {
@@ -151,7 +161,7 @@
       "builderId": 7,
       "styleId": 1,
       "wrapId": 2,
-      "aboutCue": "PFD Number 4 of 5. Paul did 5 cues built on Spain blanks. This is number 4 and extremely fancy. You can see the work Paul had done on the cue. This cue has not seen the light of day since it was sold to a collector that shelved it. It was made in 2002.",
+      "aboutCue": "PFD Number 4 of 5. Paul created 5 cues built on Burton Spain blanks. This is number 4 and extremely fancy with all ivory inlays and boxes. The black bullskin leather wrap styles perfectly with the ebony forearm and butt when combined with the ivory.  You can see the work Paul has done on this cue. It has not seen the light of day since it was sold to a collector that shelved it in 2002.",
       "image": "Paul_Drexler_Inlay.jpg"
     },
     {
@@ -159,7 +169,7 @@
       "builderId": 8,
       "styleId": 2,
       "wrapId": 3,
-      "aboutCue": "Figured Indian ebony with points and handle made from curly Walnut.",
+      "aboutCue": "Figured Indian ebony with points and wrapless handle made from curly Walnut.",
       "image": "Shelby_Williams_6_Point.jpg"
     },
     {

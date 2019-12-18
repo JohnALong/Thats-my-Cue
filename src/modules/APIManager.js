@@ -56,5 +56,10 @@ export default {
     getWithItems(items, id, secondaryItems) {
         return fetch(`${remoteURL}/${items}/${id}/${secondaryItems}?_expand=cue`)
             .then(result => result.json())
-    }
+    },
+    // fetch to search by keyword
+    searchCues: (searchAll) => {
+        return fetch(`${remoteURL}/cues/?_expand=builder&_expand=wrap&_expand=style&q=${searchAll}`)
+            .then(users => users.json())
+    },
 }
