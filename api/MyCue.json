@@ -4,6 +4,11 @@
       "name": "THISUSER",
       "password": "123",
       "id": 1
+    },
+    {
+      "name": "RDB",
+      "password": "123",
+      "id": 2
     }
   ],
   "builders": [

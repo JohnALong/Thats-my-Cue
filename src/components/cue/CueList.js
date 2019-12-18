@@ -32,14 +32,15 @@ class CueList extends Component {
     componentDidMount() {
         APIManager.getAll(`cues/?_expand=builder&_expand=wrap&_expand=style`)
             .then((cues) => {
+                console.log("cues in did mount", cues)
                 this.setState({
-                    cues: cues
+                    cues: cues,
                 })
             })
     }
 
     render() {
-        console.log("state for search", this.state)
+        console.log("state for search", this.state.cues)
         return (
             <>
                 <Form>
