@@ -1,7 +1,8 @@
 import React, { Component } from "react"
 import APIManager from "../../modules/APIManager"
 import { allUpperCase } from '../../modules/helpers'
-import { Form, Button } from 'react-bootstrap'
+import { Form, Button, Image, Container, Row } from 'react-bootstrap'
+import './Login.css'
 
 class Login extends Component {
 
@@ -56,24 +57,32 @@ class Login extends Component {
 
     render() {
         return (
-            <Form onSubmit={this.handleLogin}>
-                    <h3>Please sign in/Register</h3>
-                <Form.Group>
-                    <Form.Control onChange={this.handleFieldChange} type="text"
-                        id="name"
-                        placeholder="User Name"
-                        required="" autoFocus="" />
-                    <Form.Label htmlFor="inputName">User Name</Form.Label>
-                    <Form.Control onChange={this.handleFieldChange} type="password"
-                        id="password"
-                        placeholder="Password"
-                        required="" autoFocus="" />
-                    <Form.Label htmlFor="inputPassword">Password</Form.Label>
-                </Form.Group>
-                <Button type="submit" onClick={this.handleLogin}>
-                    Sign in
-            </Button>
-            </Form>
+            <div classname="loginContainer">
+                <Row className="loginTopRow">
+                    <Form onSubmit={this.handleLogin}>
+                        <h3>Please sign in/Register</h3>
+                        <Form.Group>
+                            <Form.Control onChange={this.handleFieldChange} type="text"
+                                id="name"
+                                placeholder="User Name"
+                                required="" autoFocus="" />
+                            <Form.Label htmlFor="inputName">User Name</Form.Label>
+                            <Form.Control onChange={this.handleFieldChange} type="password"
+                                id="password"
+                                placeholder="Password"
+                                required="" autoFocus="" />
+                            <Form.Label htmlFor="inputPassword">Password</Form.Label>
+                        </Form.Group>
+                        <Button type="submit" onClick={this.handleLogin}>Sign in</Button>
+                    </Form>
+                    <Image id="loginImage1" circle src={require
+                        ('../cue_images/loginPhoto2.jpg')} style={{ maxHeight: 'auto' }} />
+                </Row>
+                <Row className="loginBottomRow">
+                    <Image id="loginImage2" circle src={require
+                        ('../cue_images/loginPhoto1.jpg')} style={{ maxHeight: 'auto' }} />
+                </Row>
+            </div>
         )
     }
 

@@ -20,6 +20,7 @@ class Cue extends Component {
         this.setState({
             user: this.isAuthenticated(),
         });
+        console.log("authObj", authObj)
     }
 
     getUser = JSON.parse(localStorage.getItem("credentials"))

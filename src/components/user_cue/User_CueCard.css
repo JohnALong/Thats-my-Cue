@@ -1,0 +1,18 @@
+html, body {
+    height: 100%;
+}
+.cardbox {
+    width: 24rem;
+    margin-bottom: 10px;
+}
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.cardbody {
+    height: 30% !important;
+}
+.image_holder {
+    height: 68% !important;
+}

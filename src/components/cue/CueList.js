@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import CueCard from './CueCard'
 import APIManager from '../../modules/APIManager'
 import { Form, Button, Col } from 'react-bootstrap'
+import "./CueCard.css"
 
 class CueList extends Component {
     //define what this component needs to render
@@ -51,14 +52,12 @@ class CueList extends Component {
                         <Button variant="outline-success" onClick={this.handleSearch}>Search</Button>
                     </Form.Group>
                 </Form>
-                <div className="cardList">
-                    <h1 className="cardList">All Cues</h1>
+                    <h1 className="listHeader">Available Cues</h1>
                     <div className="cards">
                         {this.state.cues.map(cue => <CueCard
                             key={cue.id} cue={cue} />
                         )}
                     </div>
-                </div>
             </>
         )
     }

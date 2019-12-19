@@ -9,6 +9,21 @@
       "name": "RDB",
       "password": "123",
       "id": 2
+    },
+    {
+      "name": "JULIAN@NSS",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "name": "TREY",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "name": "STEVE",
+      "password": "123",
+      "id": 5
     }
   ],
   "builders": [
@@ -189,5 +204,42 @@
       "image": "Steve_Lomax_4_Point.jpg"
     }
   ],
-  "user_cues": []
+  "user_cues": [
+    {
+      "cueId": 10,
+      "userId": 4,
+      "notes": "your notes here",
+      "quotedPrice": "$ get from builder",
+      "timeToBuild": "how long to make?",
+      "builderContacted": false,
+      "id": 1
+    },
+    {
+      "cueId": 9,
+      "userId": 4,
+      "notes": "your notes here",
+      "quotedPrice": "$ get from builder",
+      "timeToBuild": "how long to make?",
+      "builderContacted": false,
+      "id": 2
+    },
+    {
+      "cueId": 7,
+      "userId": 4,
+      "notes": "your notes here",
+      "quotedPrice": "$ get from builder",
+      "timeToBuild": "how long to make?",
+      "builderContacted": false,
+      "id": 3
+    },
+    {
+      "cueId": 8,
+      "userId": 4,
+      "notes": "your notes here",
+      "quotedPrice": "$ get from builder",
+      "timeToBuild": "how long to make?",
+      "builderContacted": false,
+      "id": 4
+    }
+  ]
 }
