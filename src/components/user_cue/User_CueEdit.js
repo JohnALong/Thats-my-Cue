@@ -125,7 +125,7 @@ class User_CueEdit extends Component {
                         </Col>
                     </Row>
                     <Form.Group>
-                        <Form.Check type="checkbox" label="Builderd Contacted"
+                        <Form.Check type="checkbox" label="Builder Contacted"
                             checked={this.state.builderContacted}
                             onChange={this.handleCheckBox}
                             id="builderContacted"></Form.Check>
