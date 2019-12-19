@@ -77,7 +77,7 @@ class User_CueDetail extends Component {
         return (
             <div className="details_view">
                 <div className="image_holder">
-                    <img src={require(`../cue_images/${this.state.image}`)} alt="cue" /></div>
+                    <Image src={require(`../cue_images/${this.state.image}`)} alt="cue" /></div>
                 <div className="details_info">
                     <h1>User_Cue Details View</h1>
                     <h3>About Cue: {this.state.aboutCue}<span></span></h3>

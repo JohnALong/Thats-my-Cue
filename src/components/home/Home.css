@@ -28,3 +28,61 @@ html, body {
     align-items: center;
     width: 360px;
 }
+#homePageButton {
+        width: 100px; 
+        height: 100px; 
+        padding: 10px 16px; 
+        border-radius: 50px; 
+        font-size: 12px; 
+        text-align: center;
+}
+.randomHolder {
+    width: 100px;
+    height: 100px;
+}
+
+.flipBtnWrapper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    text-align: center;
+    color: ghostwhite;
+  }
+   
+  .flipBtn,
+  .flipBtn_face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .flipBtn_front {
+    background-image: url("../cue_images/aramith_pbb-9.jpg");
+    backface-visibility: hidden;
+    transform:  translateZ( 10px );
+    background-size: contain;
+    border-radius: 50px;
+  }
+   
+  .flipBtn_back {
+    background-image: url("../cue_images/8-ball_Julian.png");
+    /* background-color: blue; */
+    transform:  translateZ( -10px );
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 55px;
+  }
+   
+  .flipBtn_mid {
+    height: 20px;
+    background-color: dimgrey;
+    transform: rotateX(90deg);
+    top: -10px;
+  }
+  .flipBtn {
+    transition: transform 2s;
+    transform-style: preserve-3d;
+  }
+   
+  .flipBtnWrapper:hover .flipBtn {
+    transform: rotateX( -180deg);
+  }
