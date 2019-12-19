@@ -17,6 +17,16 @@ class CueDetail extends Component {
         aboutCue: "",
         loadingStatus: false,
         cueId: "",
+        show: false
+    }
+
+    // modal controls
+    handleClose = () => {
+        this.setState({ show: false });
+    }
+
+    handleShow = () => {
+        this.setState({ show: true });
     }
 
     handleReturnToCues = () => {
@@ -75,10 +85,6 @@ class CueDetail extends Component {
     }
 
     render() {
-        const [show, setShow] = useState(false);
-
-        const handleClose = () => setShow(false);
-        const handleShow = () => setShow(true);
         console.log("details state", this.state)
         console.log("details props", this.props)
         return (
@@ -86,14 +92,16 @@ class CueDetail extends Component {
                 <div className="image_holder">
                     <Image className="card_images" rounded variant="top" src={require(`../cue_images/${this.state.image}`)} alt="cue" style={{ maxHeight: 'auto' }} /></div>
                 <div className="details_info">
+                    <Button variant="primary" onClick={this.handleShow}>About Cue</Button>
                     <p>Style: <span>{this.state.styleName}</span></p>
-                    <Button variant="primary" onClick={handleShow}>About Modal</Button>
-                    <Modal show={show} onHide={handleClose} animation={false}>
+                    <Modal show={this.state.show} onHide={this.handleClose}>
                         <Modal.Header closeButton>
-                            <Modal.Title>Modal Heading</Modal.Title>
+                            <Modal.Title>About this cue</Modal.Title>
                         </Modal.Header>
+                        <Modal.Body>{this.state.aboutStyle}</Modal.Body>
                         <Modal.Body>{this.state.aboutWrap}</Modal.Body>
-                        <Modal.Footer><Button variant="secondary" onClick={handleClose}>close</Button>
+                        <Modal.Body>{this.state.builderName}: {this.state.contactInfo}</Modal.Body>
+                        <Modal.Footer><Button variant="secondary" onClick={this.handleClose}>close</Button>
                         </Modal.Footer>
                     </Modal>
                     <p>Builder: {this.state.builderName}</p>
