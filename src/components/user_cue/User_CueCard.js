@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import APIManager from '../../modules/APIManager'
 import { Link } from "react-router-dom"
-import { Container, Row, Col, Button, Card, Image } from 'react-bootstrap';
+import { Button, Card, Image } from 'react-bootstrap';
 import "./User_CueCard.css"
 
 
@@ -30,7 +30,7 @@ class User_CueCard extends Component {
         console.log("this.props in card", this.props)
         return (
                         <Card className="cardbox" style={{ width: '24 rem', height: 'auto' }}>
-                            <Card.Body classname="cardbody">
+                            <Card.Body className="cardbody">
                                 <Card.Title>Builders Name: {this.state.builderName} </Card.Title>
                                 <Card.Title>Style: {this.state.styleName}</Card.Title>
                                 <Card.Text>About this cue: {this.props.user_Cue.cue.aboutCue}</Card.Text>

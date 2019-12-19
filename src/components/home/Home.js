@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
-import { Link } from "react-router-dom"
-import { Image, Button, Tooltip, OverlayTrigger } from 'react-bootstrap'
+import { Image, Tooltip, OverlayTrigger } from 'react-bootstrap'
 import './Home.css'
 
 class Home extends Component {
+
+    handleAllCues = () => {
+        this.props.history.push("/cues")
+    }
+
     handleRandom = () => {
         this.props.history.push("/randomCue")
     }
@@ -11,6 +15,7 @@ class Home extends Component {
         return <Tooltip {...props}>Feeling Lucky?</Tooltip>
     }
     render() {
+        console.log("props in home", this.props)
         return (
             <>
                 <div className="homeContent">
@@ -19,12 +24,16 @@ class Home extends Component {
                     <div className="home_image_holder">
                         <Image className="home_card_images" rounded variant="top" src={require(`../cue_images/default_cues.jpg`)} alt="cue" style={{ maxHeight: 'auto' }} /></div>
                     <div className="homeButtons">
-                        <div>
-                            <Link to={`/cues`}><Button variant="success">Yes I Am!</Button></Link>
+                        <div onClick={this.handleAllCues} className="flipBtnWrapper">
+                            <div className="flipBtn">
+                                <div className="flipBtn_face flipBtn_back"></div>
+                                <div className="flipBtn_face flipBtn_mid"></div>
+                                <div className="flipBtn_face flipBtn_front"></div>
+                            </div>
                         </div>
-                        <OverlayTrigger trigger={['hover']} placement="auto" overlay={this.handleToolTip} className="randomImageHolder">
+                        <OverlayTrigger className="randomHolder randomImageHolder" trigger={['hover']} placement="auto" overlay={this.handleToolTip}>
                             <Image roundedCircle src={require
-                                ('../cue_images/smallEightBall.png')} style={{ maxHeight: 'auto' }} onClick={this.handleRandom} />
+                                ('../cue_images/8-ball_Julian.png')} style={{ maxHeight: '100px' }} onClick={this.handleRandom} />
                         </OverlayTrigger>
                     </div>
                 </div>
@@ -32,5 +41,6 @@ class Home extends Component {
         )
     }
 }
+
 
 export default Home
