@@ -4,7 +4,9 @@ import { Button, Card, Image } from 'react-bootstrap';
 import "./CueCard.css"
 
 class CueCard extends Component {
+
   render() {
+    console.log("card props", this.props)
     return (
       <Card className="cardbox" style={{ width: '24rem', height: 'auto' }}>
         <Card.Body className="cardbody">

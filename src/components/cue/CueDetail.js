@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import APIManager from '../../modules/APIManager';
-import { Button, Image } from 'react-bootstrap';
+import { Button, Image, Modal } from 'react-bootstrap';
 import "./CueDetail.css"
 
 
@@ -10,10 +10,13 @@ class CueDetail extends Component {
     state = {
         image: "default_cues.jpg",
         builderName: "",
+        contactInfo: "",
         styleName: "",
+        aboutStyle: "",
+        aboutWrap: "",
         aboutCue: "",
         loadingStatus: false,
-        cueId: ""
+        cueId: "",
     }
 
     handleReturnToCues = () => {
@@ -30,7 +33,10 @@ class CueDetail extends Component {
                 this.setState({
                     image: cue.image,
                     builderName: cue.builder.name,
+                    contactInfo: cue.builder.contactInfo,
                     styleName: cue.style.name,
+                    aboutStyle: cue.style.aboutStyle,
+                    aboutWrap: cue.wrap.aboutWrap,
                     aboutCue: cue.aboutCue,
                     id: cue.id,
                     loadingStatus: false,
@@ -39,20 +45,15 @@ class CueDetail extends Component {
     }
 
     handleGetCueData = () => {
-        console.log("1")
         APIManager.getWithItems("users", this.currentUser.id, "user_cues")
             .then((user_Cues) => {
-                console.log("2")
                 return user_Cues
             })
             .then((user_Cues) => {
-                console.log("3")
                 const result = user_Cues.filter(user_Cue => user_Cue.cueId === this.props.id)
                 if (result.length > 0) {
-                    console.log("4")
                     this.handleReRoute()
                 } else {
-                    console.log("5")
                     this.setState({ loadingStatus: true });
                     const newCue = {
                         cueId: this.props.id,
@@ -68,27 +69,16 @@ class CueDetail extends Component {
             })
     }
 
-    // handleSaveCue = () => {
-    //     const currentUser = JSON.parse(localStorage.getItem("credentials"))
-    //     this.setState({ loadingStatus: true });
-    //     const newCue = {
-    //         id: this.props.id,
-    //         userId: currentUser.id,
-    //         notes: "your notes here",
-    //         quotedPrice: "$ get from builder",
-    //         timeToBuild: "how long to make?",
-    //         builderContacted: false
-    //     };
-    //     APIManager.post("user_cues", newCue)
-    //         .then(() => this.props.history.push("/user_Cues"))
-    // }
-
     componentDidMount() {
         this.getThisCue()
 
     }
 
     render() {
+        const [show, setShow] = useState(false);
+
+        const handleClose = () => setShow(false);
+        const handleShow = () => setShow(true);
         console.log("details state", this.state)
         console.log("details props", this.props)
         return (
@@ -97,6 +87,15 @@ class CueDetail extends Component {
                     <Image className="card_images" rounded variant="top" src={require(`../cue_images/${this.state.image}`)} alt="cue" style={{ maxHeight: 'auto' }} /></div>
                 <div className="details_info">
                     <p>Style: <span>{this.state.styleName}</span></p>
+                    <Button variant="primary" onClick={handleShow}>About Modal</Button>
+                    <Modal show={show} onHide={handleClose} animation={false}>
+                        <Modal.Header closeButton>
+                            <Modal.Title>Modal Heading</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>{this.state.aboutWrap}</Modal.Body>
+                        <Modal.Footer><Button variant="secondary" onClick={handleClose}>close</Button>
+                        </Modal.Footer>
+                    </Modal>
                     <p>Builder: {this.state.builderName}</p>
                     <p>Details: {this.state.aboutCue}</p>
                     <div className="detailsButtons">
