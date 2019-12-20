@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import APIManager from '../../modules/APIManager';
-import { Button, Image } from 'react-bootstrap';
+import { Button, Image, Jumbotron } from 'react-bootstrap';
 import "../cue/CueDetail.css"
 
 class User_CueDetail extends Component {
@@ -75,7 +75,7 @@ class User_CueDetail extends Component {
         // console.log("detail props", this.props)
         // console.log("detail state", this.state)
         return (
-            <div className="details_view">
+            <Jumbotron className="details_view">
                 <div className="image_holder">
                     <Image src={require(`../cue_images/${this.state.image}`)} alt="cue" /></div>
                 <div className="details_info">
@@ -96,7 +96,7 @@ class User_CueDetail extends Component {
                         Back to Cues</Button>
                     <Button variant="danger" type="submit" onClick={this.handleDeleteCue}>Delete</Button>
                 </div>
-            </div >
+            </Jumbotron>
         );
     }
 }

@@ -11,8 +11,11 @@ html, body {
     align-items: center;
 }
 .home_image_holder {
-    width: 360px;
+    width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 .home_headline {
     text-align: center;
@@ -74,7 +77,7 @@ html, body {
    
   .flipBtn_mid {
     height: 20px;
-    background-color: dimgrey;
+    background-color: white;
     transform: rotateX(90deg);
     top: -10px;
   }

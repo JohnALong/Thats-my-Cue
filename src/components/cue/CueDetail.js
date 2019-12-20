@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import APIManager from '../../modules/APIManager';
-import { Button, Image, Modal } from 'react-bootstrap';
+import { Button, Image, Modal, Jumbotron } from 'react-bootstrap';
 import "./CueDetail.css"
 
 
@@ -88,7 +88,7 @@ class CueDetail extends Component {
         console.log("details state", this.state)
         console.log("details props", this.props)
         return (
-            <div className="details_view">
+            <Jumbotron className="details_view">
                 <div className="image_holder">
                     <Image className="card_images" rounded variant="top" src={require(`../cue_images/${this.state.image}`)} alt="cue" style={{ maxHeight: 'auto' }} /></div>
                 <div className="details_info">
@@ -116,7 +116,7 @@ class CueDetail extends Component {
             </Button>
                     </div>
                 </div>
-            </div>
+            </Jumbotron>
         );
     }
 }

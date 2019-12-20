@@ -22,7 +22,7 @@ class Home extends Component {
                     <h3 className="home_headline">Are You Looking <br />
                         For a New Cue?</h3>
                     <div className="home_image_holder">
-                        <Image className="home_card_images" rounded variant="top" src={require(`../cue_images/default_cues.jpg`)} alt="cue" style={{ maxHeight: 'auto' }} /></div>
+                        <Image className="home_card_images" rounded variant="top" src={require(`../cue_images/homePageImage.jpeg`)} alt="cue" style={{ maxHeight: 'auto' }} /></div>
                     <div className="homeButtons">
                         <div onClick={this.handleAllCues} className="flipBtnWrapper">
                             <div className="flipBtn">
