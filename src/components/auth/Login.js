@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import APIManager from "../../modules/APIManager"
 import { allUpperCase } from '../../modules/helpers'
-import { Form, Button, Image, Row } from 'react-bootstrap'
+import { Form, Button, Image, Row, Jumbotron } from 'react-bootstrap'
 import './Login.css'
 
 class Login extends Component {

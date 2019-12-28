@@ -131,14 +131,14 @@ class User_CueEdit extends Component {
                             id="builderContacted"></Form.Check>
                     </Form.Group>
                 </Form>
-                <div className="details_view">
-                    <div className="image_holder">
-                        <Image className="card_images" rounded variant="bottom" src={require(`../cue_images/${this.state.image}`)} alt="cue" style={{ maxHeight: 'auto' }} />
+                <div className="edit_details_view">
+                    <div className="edit_image_holder">
+                        <Image className="edit_card_images" rounded variant="bottom" src={require(`../cue_images/${this.state.image}`)} alt="cue" style={{ maxHeight: 'auto' }} />
                     </div>
                     <h3>About Cue: {this.state.aboutCue}<span></span></h3>
                     <p>Builder: {this.state.builderName}</p>
                     <p>Style & Wrap names: style: {this.state.styleName} and wrap: {this.state.wrapName}</p>
-                    <div className="detailsButtons">
+                    <div className="edit_detailsButtons">
                         <Button variant="success" type="submit" disabled={this.state.loadingStatus} onClick={this.updateUser_Cue}>
                             Save
         </Button>

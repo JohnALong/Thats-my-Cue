@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import APIManager from '../../modules/APIManager';
-import { Button, Image } from 'react-bootstrap';
-import "../cue/CueDetail.css"
+import { Button, Image, Jumbotron, Card } from 'react-bootstrap';
+import "./User_CueDetail.css"
 
 class User_CueDetail extends Component {
 
@@ -75,28 +75,28 @@ class User_CueDetail extends Component {
         // console.log("detail props", this.props)
         // console.log("detail state", this.state)
         return (
-            <div className="details_view">
-                <div className="image_holder">
-                    <Image src={require(`../cue_images/${this.state.image}`)} alt="cue" /></div>
-                <div className="details_info">
-                    <h1>User_Cue Details View</h1>
-                    <h3>About Cue: {this.state.aboutCue}<span></span></h3>
-                    <p>Builder: {this.state.builderName}</p>
-                    <p>Style & Wrap names: style: {this.state.styleName} and wrap: {this.state.wrapName}</p>
-                    <p>your notes here: {this.state.notes}</p>
-                    <p>quoted price: {this.state.quotedPrice}</p>
-                    <p>time to build: {this.state.timeToBuild}</p>
+            <Jumbotron className="user_details_view">
+                <Card className="user_details_info">
+                    <Card.Header>User_Cue Details View</Card.Header>
+                    <Card.Body>About Cue: {this.state.aboutCue}<span></span></Card.Body>
+                    <Card.Body>Builder: {this.state.builderName}</Card.Body>
+                    <Card.Body>Style & Wrap names: style: {this.state.styleName} and wrap: {this.state.wrapName}</Card.Body>
+                    <Card.Body>your notes here: {this.state.notes}</Card.Body>
+                    <Card.Body>quoted price: {this.state.quotedPrice}</Card.Body>
+                    <Card.Body>time to build: {this.state.timeToBuild}</Card.Body>
                     <label>builder Contacted?</label>
                     <input type="checkbox" checked={this.state.builderContacted}></input>
-                </div>
-                <div className="detailsButtons">
-                    <Button variant="info" type="submit" onClick={this.handleEditButton}>
-                        Edit</Button>
-                    <Button variant="primary" type="submit" onClick={this.handleReturnToCues} >
-                        Back to Cues</Button>
-                    <Button variant="danger" type="submit" onClick={this.handleDeleteCue}>Delete</Button>
-                </div>
-            </div >
+                    <div className="user_detailsButtons">
+                        <Button variant="info" type="submit" onClick={this.handleEditButton}>
+                            Edit</Button>
+                        <Button variant="primary" type="submit" onClick={this.handleReturnToCues} >
+                            Back to Cues</Button>
+                        <Button variant="danger" type="submit" onClick={this.handleDeleteCue}>Delete</Button>
+                    </div>
+                </Card>
+                <div className="user_details_image_holder">
+                    <Image src={require(`../cue_images/${this.state.image}`)} alt="cue" /></div>
+            </Jumbotron>
         );
     }
 }

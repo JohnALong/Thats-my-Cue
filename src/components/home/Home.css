@@ -10,9 +10,16 @@ html, body {
     justify-content: center;
     align-items: center;
 }
+.home_headline {
+  text-shadow: 1px 1px whitesmoke;
+  color: black;
+}
 .home_image_holder {
-    width: 360px;
+    width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 .home_headline {
     text-align: center;
@@ -70,13 +77,17 @@ html, body {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 55px;
+    color: dimgrey;
+    font-weight: bolder;
   }
    
   .flipBtn_mid {
     height: 20px;
-    background-color: dimgrey;
+    background-color: white;
     transform: rotateX(90deg);
     top: -10px;
+    color: black;
+    font-weight: bolder;
   }
   .flipBtn {
     transition: transform 2s;

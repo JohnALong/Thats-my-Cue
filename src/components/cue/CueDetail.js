@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import APIManager from '../../modules/APIManager';
-import { Button, Image, Modal } from 'react-bootstrap';
+import { Button, Image, Modal, Jumbotron, Card } from 'react-bootstrap';
 import "./CueDetail.css"
 
 
@@ -88,12 +88,21 @@ class CueDetail extends Component {
         console.log("details state", this.state)
         console.log("details props", this.props)
         return (
-            <div className="details_view">
-                <div className="image_holder">
-                    <Image className="card_images" rounded variant="top" src={require(`../cue_images/${this.state.image}`)} alt="cue" style={{ maxHeight: 'auto' }} /></div>
-                <div className="details_info">
-                    <Button variant="primary" onClick={this.handleShow}>About Cue</Button>
-                    <p>Style: <span>{this.state.styleName}</span></p>
+            <Jumbotron className="details_view">
+                <Card className="details_info">
+                    <Card.Body>Style: <span>{this.state.styleName}</span></Card.Body>
+                    <Card.Body>Builder: {this.state.builderName}</Card.Body>
+                    <Card.Body>Details: {this.state.aboutCue}</Card.Body>
+                    <div className="detailsButtons">
+                        <Button variant="primary" disabled={this.state.loadingStatus}
+                            onClick={this.handleGetCueData} type="submit">
+                            Save</Button>
+                        <Button varian="info" type="submit" onClick={this.handleReturnToCues} >
+                            Back to Cues</Button>
+                    </div>
+                </Card>
+                <div className="details_image_holder">
+                    <Button variant="primary" onClick={this.handleShow} block>About Cue</Button>
                     <Modal show={this.state.show} onHide={this.handleClose}>
                         <Modal.Header closeButton>
                             <Modal.Title>About this cue</Modal.Title>
@@ -104,19 +113,8 @@ class CueDetail extends Component {
                         <Modal.Footer><Button variant="secondary" onClick={this.handleClose}>close</Button>
                         </Modal.Footer>
                     </Modal>
-                    <p>Builder: {this.state.builderName}</p>
-                    <p>Details: {this.state.aboutCue}</p>
-                    <div className="detailsButtons">
-                        <Button variant="primary" disabled={this.state.loadingStatus}
-                            onClick={this.handleGetCueData} type="submit">
-                            Save
-            </Button>
-                        <Button varian="info" type="submit" onClick={this.handleReturnToCues} >
-                            Back to Cues
-            </Button>
-                    </div>
-                </div>
-            </div>
+                    <Image className="details_card_images" rounded variant="top" src={require(`../cue_images/${this.state.image}`)} alt="cue" style={{ maxHeight: 'auto' }} /></div>
+            </Jumbotron>
         );
     }
 }

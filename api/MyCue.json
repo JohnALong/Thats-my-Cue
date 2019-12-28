@@ -1,34 +1,19 @@
 {
   "users": [
     {
-      "name": "THISUSER",
+      "name": "NSS36",
       "password": "123",
       "id": 1
     },
     {
-      "name": "RDB",
+      "name": "JOHN",
       "password": "123",
       "id": 2
     },
     {
-      "name": "JULIAN@NSS",
+      "name": "TDIETRICH1972",
       "password": "123",
       "id": 3
-    },
-    {
-      "name": "TREY",
-      "password": "123",
-      "id": 4
-    },
-    {
-      "name": "STEVE",
-      "password": "123",
-      "id": 5
-    },
-    {
-      "name": "JEFFHILL",
-      "password": "123",
-      "id": 6
     }
   ],
   "builders": [
@@ -211,17 +196,8 @@
   ],
   "user_cues": [
     {
-      "cueId": 10,
-      "userId": 4,
-      "notes": "your notes here",
-      "quotedPrice": "$ get from builder",
-      "timeToBuild": "how long to make?",
-      "builderContacted": false,
-      "id": 1
-    },
-    {
-      "cueId": 9,
-      "userId": 4,
+      "cueId": 7,
+      "userId": 1,
       "notes": "your notes here",
       "quotedPrice": "$ get from builder",
       "timeToBuild": "how long to make?",
@@ -229,8 +205,8 @@
       "id": 2
     },
     {
-      "cueId": 7,
-      "userId": 4,
+      "cueId": 2,
+      "userId": 2,
       "notes": "your notes here",
       "quotedPrice": "$ get from builder",
       "timeToBuild": "how long to make?",
@@ -238,8 +214,8 @@
       "id": 3
     },
     {
-      "cueId": 8,
-      "userId": 4,
+      "cueId": 9,
+      "userId": 3,
       "notes": "your notes here",
       "quotedPrice": "$ get from builder",
       "timeToBuild": "how long to make?",
@@ -247,8 +223,8 @@
       "id": 4
     },
     {
-      "cueId": 10,
-      "userId": 6,
+      "cueId": 8,
+      "userId": 3,
       "notes": "your notes here",
       "quotedPrice": "$ get from builder",
       "timeToBuild": "how long to make?",
@@ -256,13 +232,49 @@
       "id": 5
     },
     {
-      "cueId": 9,
-      "userId": 6,
+      "cueId": 10,
+      "userId": 3,
       "notes": "your notes here",
       "quotedPrice": "$ get from builder",
       "timeToBuild": "how long to make?",
       "builderContacted": false,
       "id": 6
+    },
+    {
+      "cueId": 4,
+      "userId": 3,
+      "notes": "your notes here",
+      "quotedPrice": "$ get from builder",
+      "timeToBuild": "how long to make?",
+      "builderContacted": false,
+      "id": 7
+    },
+    {
+      "cueId": 1,
+      "userId": 3,
+      "notes": "your notes here",
+      "quotedPrice": "$ get from builder",
+      "timeToBuild": "how long to make?",
+      "builderContacted": false,
+      "id": 8
+    },
+    {
+      "cueId": 6,
+      "userId": 3,
+      "notes": "your notes here",
+      "quotedPrice": "$ get from builder",
+      "timeToBuild": "how long to make?",
+      "builderContacted": false,
+      "id": 9
+    },
+    {
+      "cueId": 5,
+      "userId": 3,
+      "notes": "your notes here",
+      "quotedPrice": "$ get from builder",
+      "timeToBuild": "how long to make?",
+      "builderContacted": false,
+      "id": 10
     }
   ]
 }

@@ -1,7 +1,7 @@
 html, body {
     height: 100%;
 }
-.cards {
+.cue_cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -12,17 +12,17 @@ html, body {
 .listHeader {
     text-align: center;
 }
-.image_holder {
-    width: 100% !important;
-    height: 75% !important;
+.cue_image_holder {
+    width: 100%;
+    height: 60%;
     object-fit: contain;
 }
-.card_images {
-    height: 100% !important;
-    width: 100% !important;
-    object-fit: fill !important;
-}
-.cardbody {
+.cue_card_images {
+    height: 100%;
     width: 100%;
-    height: 25% !important;
+    object-fit: fill;
+}
+.cue_cardbody {
+    width: 100%;
+    height: 35%;
 }
