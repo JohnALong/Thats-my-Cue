@@ -27,7 +27,7 @@ class Home extends Component {
                         <div onClick={this.handleAllCues} className="flipBtnWrapper">
                             <div className="flipBtn">
                                 <div className="flipBtn_face flipBtn_back"></div>
-                                <div className="flipBtn_face flipBtn_mid"></div>
+                                <div className="flipBtn_face flipBtn_mid">All Cues</div>
                                 <div className="flipBtn_face flipBtn_front"></div>
                             </div>
                         </div>

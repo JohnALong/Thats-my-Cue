@@ -30,7 +30,7 @@ class User_CueList extends Component {
         return (
             <>
                 <h1 className="listHeader">My Cues</h1>
-                <div className="cards">
+                <div className="user_cards">
                     {this.state.user_Cues.map(user_Cue => <User_CueCard
                         key={user_Cue.id} user_Cue={user_Cue}
                         {...this.props} />

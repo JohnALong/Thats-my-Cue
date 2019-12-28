@@ -29,17 +29,17 @@ class User_CueCard extends Component {
         console.log("this.state in card", this.state)
         console.log("this.props in card", this.props)
         return (
-                        <Card className="cardbox" style={{ width: '24 rem', height: 'auto' }}>
-                            <Card.Body className="cardbody">
+                        <Card className="user_cardbox" style={{ width: '24 rem', height: 'auto' }}>
+                            <Card.Body className="user_cardbody">
                                 <Card.Title>Builders Name: {this.state.builderName} </Card.Title>
                                 <Card.Title>Style: {this.state.styleName}</Card.Title>
                                 <Card.Text>About this cue: {this.props.user_Cue.cue.aboutCue}</Card.Text>
-                                <div className="detailsButtons">
+                                <div className="user_detailsButtons">
                                     <Link to={`/user_Cues/${this.props.user_Cue.id}`}><Button variant="info">Details</Button></Link>
                                     <Link to={`/cues/`}><Button variant="primary">Back to all Cues</Button></Link></div>
                             </Card.Body>
-                            <div className="image_holder">
-                                <Image className="card_images" rounded variant="top" src={require(`../cue_images/${this.state.image}`)} alt="cue" style={{ maxHeight: 'auto' }} /></div>
+                            <div className="user_image_holder">
+                                <Image className="user_card_images" rounded variant="top" src={require(`../cue_images/${this.state.image}`)} alt="cue" style={{ maxHeight: 'auto' }} /></div>
                         </Card>  
         );
     }

@@ -1,18 +1,18 @@
 html, body {
     height: 100%;
 }
-.cardbox {
+.user_cardbox {
     width: 24rem;
     margin-bottom: 10px;
 }
-.cards {
+.user_cards {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
-.cardbody {
+.user_cardbody {
     height: 30% !important;
 }
-.image_holder {
+.user_image_holder {
     height: 68% !important;
 }

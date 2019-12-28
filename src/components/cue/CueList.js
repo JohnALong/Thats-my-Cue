@@ -53,7 +53,7 @@ class CueList extends Component {
                     </Form.Group>
                 </Form>
                     <h1 className="listHeader">Available Cues</h1>
-                    <div className="cards">
+                    <div className="cue_cards">
                         {this.state.cues.map(cue => <CueCard
                             key={cue.id} cue={cue} />
                         )}

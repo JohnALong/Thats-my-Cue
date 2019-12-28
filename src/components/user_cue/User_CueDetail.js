@@ -75,10 +75,10 @@ class User_CueDetail extends Component {
         // console.log("detail props", this.props)
         // console.log("detail state", this.state)
         return (
-            <Jumbotron className="details_view">
-                <div className="image_holder">
+            <Jumbotron className="user_details_view">
+                <div className="user_details_image_holder">
                     <Image src={require(`../cue_images/${this.state.image}`)} alt="cue" /></div>
-                <div className="details_info">
+                <div className="user_details_info">
                     <h1>User_Cue Details View</h1>
                     <h3>About Cue: {this.state.aboutCue}<span></span></h3>
                     <p>Builder: {this.state.builderName}</p>
@@ -89,7 +89,7 @@ class User_CueDetail extends Component {
                     <label>builder Contacted?</label>
                     <input type="checkbox" checked={this.state.builderContacted}></input>
                 </div>
-                <div className="detailsButtons">
+                <div className="user_detailsButtons">
                     <Button variant="info" type="submit" onClick={this.handleEditButton}>
                         Edit</Button>
                     <Button variant="primary" type="submit" onClick={this.handleReturnToCues} >
