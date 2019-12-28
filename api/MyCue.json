@@ -239,6 +239,42 @@
       "timeToBuild": "how long to make?",
       "builderContacted": false,
       "id": 6
+    },
+    {
+      "cueId": 4,
+      "userId": 3,
+      "notes": "your notes here",
+      "quotedPrice": "$ get from builder",
+      "timeToBuild": "how long to make?",
+      "builderContacted": false,
+      "id": 7
+    },
+    {
+      "cueId": 1,
+      "userId": 3,
+      "notes": "your notes here",
+      "quotedPrice": "$ get from builder",
+      "timeToBuild": "how long to make?",
+      "builderContacted": false,
+      "id": 8
+    },
+    {
+      "cueId": 6,
+      "userId": 3,
+      "notes": "your notes here",
+      "quotedPrice": "$ get from builder",
+      "timeToBuild": "how long to make?",
+      "builderContacted": false,
+      "id": 9
+    },
+    {
+      "cueId": 5,
+      "userId": 3,
+      "notes": "your notes here",
+      "quotedPrice": "$ get from builder",
+      "timeToBuild": "how long to make?",
+      "builderContacted": false,
+      "id": 10
     }
   ]
 }
