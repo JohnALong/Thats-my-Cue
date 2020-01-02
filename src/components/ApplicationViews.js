@@ -41,6 +41,7 @@ class ApplicationViews extends Component {
                     if (this.props.user) {
                         return <CueList {...props} {...this.props} />
                     } else {
+                        console.log("test for reroute", this.props.user)
                         return <Redirect to="/login" />
                     }
                 }} />

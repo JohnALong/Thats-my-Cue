@@ -6,7 +6,7 @@ import "./CueCard.css"
 class CueCard extends Component {
 
   render() {
-    console.log("card props", this.props)
+    // console.log("card props", this.props)
     return (
       <Card className="cue_cardbox" style={{ width: '24rem', height: 'auto' }}>
         <Card.Body className="cue_cardbody">

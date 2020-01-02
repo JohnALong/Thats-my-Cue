@@ -97,7 +97,7 @@ class CueDetail extends Component {
                         <Button variant="primary" disabled={this.state.loadingStatus}
                             onClick={this.handleGetCueData} type="submit">
                             Save</Button>
-                        <Button varian="info" type="submit" onClick={this.handleReturnToCues} >
+                        <Button variant="info" type="submit" onClick={this.handleReturnToCues} >
                             Back to Cues</Button>
                     </div>
                 </Card>
