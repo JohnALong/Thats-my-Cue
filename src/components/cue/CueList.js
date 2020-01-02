@@ -8,7 +8,7 @@ import "./CueCard.css"
 class CueList extends Component {
     //define what this component needs to render
     state = {
-        cues: [],
+        cues: []
     }
 
     // function to control field input locations for search and filter
@@ -20,12 +20,14 @@ class CueList extends Component {
     }
 
     // function to search by keyword
-    handleSearch = () => {
+    handleSearch = evt => {
+        evt.preventDefault()
         console.log("event in search", this.state.search)
         APIManager.searchCues(this.state.search)
             .then((newCues) => {
+                console.log("newCues", newCues)
                 this.setState({
-                    cues: newCues
+                    cues: newCues,
                 })
             })
     }
@@ -33,7 +35,7 @@ class CueList extends Component {
     componentDidMount() {
         APIManager.getAll(`cues/?_expand=builder&_expand=wrap&_expand=style`)
             .then((cues) => {
-                console.log("cues in did mount", cues)
+                // console.log("cues in did mount", cues)
                 this.setState({
                     cues: cues,
                 })
@@ -41,7 +43,7 @@ class CueList extends Component {
     }
 
     render() {
-        console.log("state for search", this.state.cues)
+        console.log("state for search", this.props.user)
         return (
             <>
                 <Form>
@@ -49,13 +51,13 @@ class CueList extends Component {
                         <Form.Control type="text" placeholder="Search by Keyword"
                             onChange={this.handleFieldChange}
                             id="search" />
-                        <Button variant="outline-success" onClick={this.handleSearch}>Search</Button>
+                        <Button type="submit" variant="outline-success" onClick={this.handleSearch}>Search</Button>
                     </Form.Group>
                 </Form>
                     <h1 className="listHeader">Available Cues</h1>
                     <div className="cue_cards">
                         {this.state.cues.map(cue => <CueCard
-                            key={cue.id} cue={cue} />
+                            key={cue.id} cue={cue} user={this.props.user} />
                         )}
                     </div>
             </>

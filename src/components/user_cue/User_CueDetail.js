@@ -77,7 +77,7 @@ class User_CueDetail extends Component {
         return (
             <Jumbotron className="user_details_view">
                 <Card className="user_details_info">
-                    <Card.Header>User_Cue Details View</Card.Header>
+                    <Card.Header>Your cue details</Card.Header>
                     <Card.Body>About Cue: {this.state.aboutCue}<span></span></Card.Body>
                     <Card.Body>Builder: {this.state.builderName}</Card.Body>
                     <Card.Body>Style & Wrap names: style: {this.state.styleName} and wrap: {this.state.wrapName}</Card.Body>
