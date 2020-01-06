@@ -24,12 +24,13 @@ class CueList extends Component {
         evt.preventDefault()
         console.log("event in search", this.state.search)
         APIManager.searchCues(this.state.search)
-            .then((newCues) => {
-                console.log("newCues", newCues)
-                this.setState({
-                    cues: newCues,
-                })
+        .then((newCues) => {
+            console.log("newCues", newCues)
+            this.setState({
+                cues: newCues,
             })
+        })
+        evt.target.reset()
     }
 
     componentDidMount() {
@@ -46,12 +47,12 @@ class CueList extends Component {
         console.log("state for search", this.props.user)
         return (
             <>
-                <Form>
+                <Form onSubmit={this.handleSearch}>
                     <Form.Group as={Col} id="searchForm">
                         <Form.Control type="text" placeholder="Search by Keyword"
                             onChange={this.handleFieldChange}
                             id="search" />
-                        <Button type="submit" variant="outline-success" onClick={this.handleSearch}>Search</Button>
+                        <Button type="submit" variant="outline-success">Search</Button>
                     </Form.Group>
                 </Form>
                     <h1 className="listHeader">Available Cues</h1>
