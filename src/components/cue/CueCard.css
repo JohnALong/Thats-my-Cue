@@ -1,6 +1,9 @@
 html, body {
     height: 100%;
 }
+.cue_cardbox {
+    margin: 10px;
+}
 .cue_cards {
     display: flex;
     flex-wrap: wrap;
