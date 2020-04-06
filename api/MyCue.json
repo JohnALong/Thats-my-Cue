@@ -4,6 +4,21 @@
       "name": "JEREMIAH",
       "password": "123",
       "id": 1
+    },
+    {
+      "name": "JOHN",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "name": "JOHN LONG",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "name": "JLCOMP45",
+      "password": "123",
+      "id": 4
     }
   ],
   "builders": [
@@ -215,6 +230,87 @@
       "timeToBuild": "how long to make?",
       "builderContacted": false,
       "id": 3
+    },
+    {
+      "cueId": 7,
+      "userId": 2,
+      "notes": "your notes here",
+      "quotedPrice": "$ get from builder",
+      "timeToBuild": "how long to make?",
+      "builderContacted": false,
+      "id": 4
+    },
+    {
+      "cueId": 10,
+      "userId": 2,
+      "notes": "your notes here",
+      "quotedPrice": "$ get from builder",
+      "timeToBuild": "how long to make?",
+      "builderContacted": false,
+      "id": 5
+    },
+    {
+      "cueId": 2,
+      "userId": 3,
+      "notes": "your notes here",
+      "quotedPrice": "$ get from builder",
+      "timeToBuild": "how long to make?",
+      "builderContacted": false,
+      "id": 7
+    },
+    {
+      "cueId": 8,
+      "userId": 3,
+      "notes": "Beautiful wood - loved the leather wrap.  Dave was awesome to talk to.",
+      "quotedPrice": "$ 2500",
+      "timeToBuild": "18 months",
+      "builderContacted": true,
+      "id": 8
+    },
+    {
+      "cueId": 11,
+      "userId": 3,
+      "notes": "your notes here",
+      "quotedPrice": "$ get from builder",
+      "timeToBuild": "how long to make?",
+      "builderContacted": false,
+      "id": 9
+    },
+    {
+      "cueId": 3,
+      "userId": 3,
+      "notes": "your notes here",
+      "quotedPrice": "$ get from builder",
+      "timeToBuild": "how long to make?",
+      "builderContacted": false,
+      "id": 10
+    },
+    {
+      "cueId": 10,
+      "userId": 4,
+      "notes": "your notes here",
+      "quotedPrice": "$ get from builder",
+      "timeToBuild": "how long to make?",
+      "builderContacted": false,
+      "id": 11
+    },
+    {
+      "cueId": 9,
+      "userId": 4,
+      "notes": "your notes here",
+      "quotedPrice": "$ get from builder",
+      "timeToBuild": "how long to make?",
+      "builderContacted": false,
+      "id": 12
+    },
+    {
+      "cueId": 11,
+      "userId": 4,
+      "notes": "Brent was great to talk to - similar cue will take about 18 months from Jan 2020 to complete",
+      "quotedPrice": "$1500",
+      "timeToBuild": "18 months",
+      "builderContacted": true,
+      "id": 13
     }
   ]
 }
